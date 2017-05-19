@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Flow List Layout with Flexbox</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<style>
+#box
+{
+	display: flex; 
+	flex-wrap: wrap;
+	border: 3px solid red;
+	width: 800px;
+}
+.boxitem
+{
+	border: thin solid blue;
+	background-color: #ffeecc;
+	width: 99%;
+	margin: 0.3%;
+	height:80px;
+}
+</style>
+<script>
+$(function(){
+	$("#btnGrid").click(function (){
+		$(".boxitem").css("width", "24%").css("height","150px");
+		$("#box").attr("data-layout","Grid");
+	});
+	
+	$("#btnList").click(function (){
+		$(".boxitem").css("width", "99%").css("height","80px");
+		$("#box").attr("data-layout","List");
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<h1>Date Items Layout using CSS Flexbox</h1>
+<p>Click to switch layout: <a href="#" id='btnList'>List View</a> | <a href="#" id='btnGrid'>Grid View</a></p>
+<div id="box" data-layout="List">
+	<script>
+	for (i=0;i<8;i++)
+	{
+		document.write("<div class='boxitem'>data</div>");
+	}
+	</script>
+</div>
+
+</html>

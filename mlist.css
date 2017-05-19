@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500);
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+body{
+	background-color: grey;
+	font-size: 18px;
+	text-align: left;
+	font-family: 'Fira Sans', sans-serif;
+	color: #466C7F;
+	height: 90%;
+}
+
+nav ul{
+	list-style-type: none;
+	color:#466C7F;
+	background-color: #3399CC;
+	padding-left: 4.25em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 1.3em;
+	position: relative;
+	
+}
+nav ul:after {
+		content: ""; 
+		clear: both; 
+		display: block;
+}
+li{
+	display: inline;
+	margin: 1em;
+	padding: .5em;
+	text-align: center;
+}
+nav ul li {
+	float: left;
+
+}
+nav ul:hover > li {
+	background-color: rgba(140, 217, 255);
+}
+a{
+	color:#c9b2a2;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+a:hover{
+	background-color: rgba(140, 217, 255);
+	color:#FFFFFF;
+}
+
+h1 {
+	margin: 2em;
+}
+#Search{
+    
+	 margin: 0em 0em 1em 0em;
+	background-color: rgba(51, 153, 204, .3);
+}
+#Search p{
+ margin-left: 1em;
+
+}
+#lang{
+	 margin: 1em;
+}
+select {
+         border: 0 !important;  
+		background: #FFFCF6;
+		font-family: 'Fira Sans', sans-serif;
+		color: #3399CC;
+		padding: 5px 5px; 
+		border-radius: 20px;
+}
+#pages{
+
+	float:right;
+	margin: 3em 1em 0em 0em;
+}
+#pages p{
+	color:#c9b2a2;
+}
+
+#sButton{
+	 border: 2px solid #c9b2a2;
+    padding: 5px 40px; 
+    background: #c9b2a2;
+    border-radius: 20px;
+	font-size: 1em;
+	color: #3399CC;
+}
+h1{
+	margin-left: 1em;
+
+}
+img{
+	margin: 1em 0em 1em 2em;
+	width: 128px;
+	height: 128px;
+	 background: rgba(193, 193, 193, .3);
+}
+
+#movieSearch{
+	margin-left: 5em;
+	margin-top: 3em;
+	margin-bottom:3em;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+#movieSearch a{
+	float: left;
+}
+#movieSearch h2{
+
+	margin-left:10em;
+}
+.items{
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+	    -ms-flex:1;
+	        flex:1;
+}
+#view button{
+	margin-top: 1em;
+	 border: 2px solid #c9b2a2;
+    padding: 5px 20px; 
+    background: #c9b2a2;
+    border-radius: 20px;
+	font-size: 1em;
+	color: #3399CC;
+
+}
+.spanDis{
+
+	font-weight: bold;
+
+}
+#favorites{
+	margin: 3em 0em 0em 1em;
+
+}

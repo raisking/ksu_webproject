@@ -1,0 +1,61 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Google Books Search</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+   <a href="googlebooksmain.html">Back to Main Menu</a>
+    <form>
+        <p>Enter Search Terms:</p>
+        <input type="text" name="q" value=""/>
+        <p>Select Page Number:</p>
+        <p>
+        1:
+        <input type="radio" name="page" value="1" checked>
+        2:
+        <input type="radio" name="page" value="2">
+        3:
+        <input type="radio" name="page" value="3">
+        </p>
+        <input type="submit" value="Search"/> 
+    </form>
+    
+<h1 id="title"></h1>
+<h2>Total results: <span id="total"></span>
+</h2>
+
+<div id="results" style="display: flex; flex-wrap: wrap;"></div>
+
+<script>
+    $(function(){
+        //dump json file content to a JavaScript JSON object
+        var json = ;
+        console.log(json);
+		var total=json.totalItems;
+        $("#total").text(total); 
+		
+		var resultHTML="";
+		for (i in json.items)
+        {
+			var booktitle=json.items[i].volumeInfo.title;
+            var bookid=json.items[i].id;
+		    var cover="";
+			if (json.items[i].volumeInfo.imageLinks != null)
+				cover=json.items[i].volumeInfo.imageLinks.smallThumbnail;
+
+            resultHTML+="<div class='bookdiv'>";
+            resultHTML+="<img src='"+cover+"' style='float: left' />";
+            resultHTML+="<a href='bookinfo.php?id="+bookid+"'>"+booktitle+"</a>";
+            resultHTML+="</div>";;
+        }
+        $("#results").html(resultHTML); 
+        $(".bookdiv").css("width", "300px"); 
+
+    });
+</script>
+
+</body>
+</html>

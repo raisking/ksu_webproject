@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Using Flexbox for a Single Item Info</title>
+<style>
+.book
+{
+	border: thin solid blue;
+	width: 700px;
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+	flex-wrap:wrap;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Make a card style for a single data item layout using flexbox</h1>
+
+<h2>Layout 1: two columns</h2>
+<div class="book">
+	<img src="http://s.it-ebooks-api.info/14/jquery_mobile_web_development_essentials_2nd_edition.jpg">
+	<div style="width: 480px; padding:10px">
+		<h2>jQuery Mobile Web Development Essentials, 2nd Edition</h2>
+		<p>jQuery Mobile is a unified, HTML5-based user interface system for all popular mobile device platforms. It is the most practical HTML / JavaScript framework available today. In this tutorial, you will learn how to use jQuery Mobile with your HTML page ...</p>
+	</div>
+</div>
+
+<h2>Layout 2: with a header</h2>
+<div class="book">
+	<div style="width:100%; text-align:center; background-color:yellow; margin:5px">
+		<h2>jQuery Mobile Web Development Essentials, 2nd Edition</h2>
+	</div>
+	<img src="http://s.it-ebooks-api.info/14/jquery_mobile_web_development_essentials_2nd_edition.jpg">
+	<div style="width:480px; padding:10px">jQuery Mobile is a unified, HTML5-based user interface system for all popular mobile device platforms. It is the most practical HTML / JavaScript framework available today. In this tutorial, you will learn how to use jQuery Mobile with your HTML page ...
+	</div>
+</div>
+
+</html>

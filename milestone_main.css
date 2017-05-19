@@ -1,0 +1,38 @@
+a:link {
+    color: yellow;
+	text-decoration:none;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+	text-decoration:none;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+h2 {
+	
+	text-align:center;
+	
+}
+body  {
+    background-image: url("wallpaper1.jpg");
+}
+
+
+h1 {
+	
+	color: white;
+	font-size: 250%;
+	text-align: center;
+	text-decoration: underline;
+}

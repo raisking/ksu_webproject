@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Google Books Search</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+</head>
+<script>
+    $(function () {
+
+       // var service_point1 = "https://www.googleapis.com/books/v1/users/117133542904398879136/bookshelves/1001/";
+        var service_point2 = "https://www.googleapis.com/books/v1/users/100896000280916211889/bookshelves/1001/volumes";
+
+        $.getJSON(service_point2, function (json2) {
+
+            //$("#shelf").text(json.title); 
+
+            resultHTML = "";
+            for (i in json2.items) {
+                var booktitle = json2.items[i].volumeInfo.title;
+                var bookid = json2.items[i].id;
+                var cover = json2.items[i].volumeInfo.imageLinks.smallThumbnail;
+				var link = json2.items[i].volumeInfo.infoLink;
+                resultHTML += "<div class='bookdiv'>";
+                resultHTML += "<img src='" + cover + "' style='float: left' />";
+                resultHTML += "<a href='" + link + "'>" + booktitle + "</a>";
+                resultHTML += "</div>";;
+            }
+            $("#results").html(resultHTML);
+            $(".bookdiv").css("width", "300px");
+        });
+    });
+</script>
+<body>
+
+<h1 id="title"></h1>
+<h2> My Bookshelf <span id="shelf"></span>
+</h2>
+<div id="results" style="display: flex; flex-wrap: wrap;"></div>
+
+</body>
+</html>

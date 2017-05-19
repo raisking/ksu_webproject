@@ -1,0 +1,21 @@
+			
+			{
+  "personal": {
+    "Mitarbeiter": "Max Mustermann",
+    "Geburtsdatum": "16.04.70",
+    "Gehalt": "3.482,01",
+    "KinderAnzahl": "2",
+    "Kinder": {
+      "Kind": [
+        {
+          "KindName": "Adam",
+          "KindAlter": "12"
+        },
+        {
+          "KindName": "Eva",
+          "KindAlter": "3"
+        }
+      ]
+    }
+  }
+}

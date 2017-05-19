@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+	<title>Grid Layout with Flexbox</title>
+<style>
+#box
+{
+	display: flex; 
+	flex-direction:column;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	border: 3px solid red;
+	width: 800px;
+	height: 600px;
+	flex-grow:1;
+}
+.boxitem
+{
+	flex-grow:1;
+	border: thin solid blue;
+	background-color: #ffeecc;
+	width: 23%;
+	margin: 5px;
+	height:150px;
+}
+#special
+{
+	flex-basis: 270px;
+	background-color: #44eecc;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Data Items Layout using Flexbox</h1>
+<h2>Vertical Layout with Flexbox</h2>
+<div id="box">
+	<div id="special" class="boxitem">1</div>
+	<script>
+	for (i=2;i<10;i++)
+	{
+		document.write("<div class='boxitem'>"+i+"</div>");
+	}
+	</script>
+</div>
+</html>

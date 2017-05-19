@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>A calendar example using javascript</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js">
+		</script>
+<script>
+    function cal(date1)
+    {
+        pointerDate = date1;
+        pointerDate.setDate(1);
+        enumDayofWeek = pointerDate.getDay();
+        day = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+        cal = ""; //output string value
+
+        cal = cal + ("<table border='1' cellspacing='0'><tr height='25'>");
+        for (i = 0; i < 7; i++)
+        {
+            cal = cal + ("<td width='150' bgcolor='#cccccc' align=right><b>" + day[i] + "</b></td>");
+        }
+        cal = cal + ("</tr>");
+
+        if (enumDayofWeek != 0)
+        {
+            cal = cal + ("<tr><td colspan='" + enumDayofWeek + "'>.</td>");
+        }
+
+        for (i = 1; i <= DaysInMonth(pointerDate.getFullYear(), pointerDate.getMonth() + 1); i++)
+        {
+            if (pointerDate.getDay() == 0)
+                cal = cal + ("<tr>");
+            cal = cal + ("<td valign='top' height='100' align='right'>" + i + "</td>");
+            if (pointerDate.getDay() == 7)
+                cal = cal + ("</tr>");
+            pointerDate.setDate(i + 1);
+        }
+        cal = cal + ("</tr></table>");
+        return cal;
+    }
+
+    function DaysInMonth(year, month)
+    {
+        var days;
+        if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 ||
+            month == 10 || month == 12)
+            days = 31;
+        else if (month == 4 || month == 6 || month == 9 || month == 11)
+            days = 30;
+        else if (month == 2)
+        {
+            if (((year % 4) == 0) && ((year % 100) != 0) || ((year % 400) == 0))
+                days = 29;
+            else
+                days = 28;
+        }
+        return days;
+    }
+
+    $(function ()
+    {
+        date1 = new Date();
+        $("#lblMonth").html("<h3>Current Month: " + (date1.getMonth() + 1) + "/" + date1.getFullYear() + "</h3>");
+        $("#cal").html(cal(date1));
+    });
+</script>
+</head>
+
+<body>
+<h1 id="lblMonth"></h1>
+<div id="cal"></div>
+</body>
+</html>

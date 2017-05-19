@@ -1,0 +1,23 @@
+a:link {
+    color: blue;	
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+/* mouse over link */
+a:hover {
+    color: red;
+}
+table, th, td {
+    border: 1px solid yellow;
+    padding: 0px;
+}
+table {
+    border-spacing: 0px;
+}
+
+p {
+    text-indent: 70px;
+}

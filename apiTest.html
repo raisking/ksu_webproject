@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link id="pageStyle" rel="stylesheet" type="text/css" href="mlist.css"/>
+
+	<script  src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+
+    <script type="text/javascript">
+
+	  function changeStyle(css){
+		document.getElementById('pageStyle').setAttribute('href', css); 
+	  }
+	</script>
+</head>
+
+
+
+
+
+<!-- Templates-->
+  <script id="moviestpl" type="text/template">
+	  {{#results}}<!--Name of object from the data file-->
+	    </br>
+		<div class="movies items">
+		 <h3>{{title}}</h3>
+		 <img src="http://image.tmdb.org/t/p/w185/{{poster_path}}" alt="{{title}}">
+		 <p><span class="spanDis">Release Date:</span>{{release_date}}</p>
+				 <a href="#" class="addToFave" id="{{id}}" >Add to Favorites</a>
+				 <br>
+		 		 <a href="#" class="mID" id="{{id}}">Learn More</a>
+	     <div class="details" style="display: none"></div>
+		 </div>
+ 
+	  {{/results}}
+  </script>
+  
+  
+  
+  
+   <script id="Detailstpl" type="text/template">
+   <div class="mDetails">
+            <br>
+			<p><span class="spanDis">Status:</span> {{status}}</p>
+			<p><span class="spanDis">Overview:</span> {{overview}}</p>
+			<p><span class="spanDis">Language:</span> {{original_language}}</p>
+			<p><span class="spanDis">Revenue:</span> $ {{revenue}}</p>
+		</div>
+  </script>
+  
+  
+  
+  
+  
+  
+  
+   <script id="favestpl" type="text/template">
+	  {{#items}}<!--Name of object from the data file-->
+	    </br>
+		<div class="favMovies">
+		 <h3>{{title}}</h3>
+		 <img src="http://image.tmdb.org/t/p/w185/{{poster_path}}" alt="{{title}}">
+		 <p><span class="spanDis">Release Date:</span> {{release_date}}<p>
+				 <a href="#" class="remove" id="{{id}}" >Remove</a>
+	     <div class="details" style="display: none"></div>
+		 </div>
+	  {{/items}}
+  </script>
+    
+	
+	
+
+
+	
+	
+	
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<!--javascript for searching term-->
+<script>
+
+
+
+
+
+
+function SearchMovies (page)
+{
+	var url="https://api.themoviedb.org/3/search/movie?query="+$("#term").val()+
+	"&api_key=ead5890ec7bb286b904af5c6d9bfbe9d&page="+page;
+	var year = $("#Year").val();
+	var lang =$("#lang").attr("value");
+	if(year != "")
+	{
+	  url= url+"&primary_release_year="+year;
+	}
+	if( lang !="")
+	{
+		url= url+"&language=" +lang;
+	}
+	if(lang != "" && year != "")
+	{
+		url= url+"&primary_release_year="+year+"&language=" +lang;
+	}
+	
+	
+	
+	
+	
+// this is the function that will look up all of the terms and shit
+		$.getJSON(url,function(jsonData)
+			{
+				var template = $('#moviestpl').html();
+				var html = Mustache.to_html(template, jsonData);	
+				$('#movieSearch').html(html);
+				$('.mID').on('click', function(getMovieinfo)
+				{
+					getMovieinfo.preventDefault();
+					var div = $(this).next();
+						getDetails($(this).attr("id"), div);
+						console.log($(this).next());
+				});
+				$('.addToFave').on('click',function(getMovie)
+				{
+					 getMovie.preventDefault();
+					 var movID = $(this).attr("id");
+					addFaves($(this).attr("id"));
+					console.log($(this).attr("id"));
+			
+			    });
+			});	
+}
+
+
+
+
+
+$(document).ready(function()
+{
+		// Search
+		$("#sButton").click(function()
+		{
+			event.preventDefault();
+			// This will grab the search from the api
+			SearchMovies(1);
+		});
+});
+
+
+
+
+
+
+
+function getDetails(id, div)
+{
+		$.getJSON("https://api.themoviedb.org/3/movie/"+ id +"?api_key=ead5890ec7bb286b904af5c6d9bfbe9d", function(jsonData)
+		{
+			var template =$('#Detailstpl').html();
+			var html = Mustache.to_html(template, jsonData);
+			//toggle
+			$(div).html(html);
+			console.log(html);
+		$(div).toggle();
+		});
+}
+
+
+
+
+
+//This will be for the building the favoriites list-->
+function addFaves(movID)
+{
+	$('.addToFave').on('click',function(movID)
+				{
+					// this will post to the created list
+					$.post("http://api.themoviedb.org/3/list/5669fa0c9251417383002007/add_item?api_key=ead5890ec7bb286b904af5c6d9bfbe9d&session_id=e11e31954d46151ad1d8c83a17c4ba9f095af73",{"media_id":movID});
+					
+				});
+}
+	$.getJSON("http://api.themoviedb.org/3/list/5669fa0c9251417383002007?api_key=ead5890ec7bb286b904af5c6d9bfbe9d&session_id=e11e31954d46151ad1d8c83a17c4ba9f095af73", function(jsonData)
+							{
+									// do some template or something
+									var template = $('#favestpl').html();
+									var html = Mustache.to_html(template, jsonData);	
+									$('#favList').html(html);
+		
+							});
+	
+		//removes it from the list
+		$('.remove').click(function(){
+			var movID = $(this).attr("id");
+			$.post("http://api.themoviedb.org/3/list/5669fa0c9251417383002007/remove_item?api_key=ead5890ec7bb286b904af5c6d9bfbe9d&session_id=e11e31954d46151ad1d8c83a17c4ba9f095af73",{"media_id":movID}, function()
+			{
+				 alert("item has been removed");
+			});
+		
+		
+		});
+
+
+</script>
+
+
+
+
+
+
+
+<!-- pagination-->
+<script>
+$(document).ready(function()
+{
+
+	$("#pages a").click(function()
+	{
+		var pageSelect = $(this).attr("id");
+		if(pageSelect == "page1")
+		{
+			var page = 1;
+		}
+		else if (pageSelect == "page2")
+		{
+		     var page=2;
+		}
+		else if (pageSelect == "page3")
+		{
+		     var page=3;
+		}
+		else if (pageSelect == "page4")
+		{
+		     var page=4;
+		}
+		else
+		{
+			 var page=5;
+		}
+		
+		event.preventDefault();
+			// This will grab the search from the api
+			SearchMovies(page);
+		
+	});
+});
+</script>
+
+
+
+
+
+<body>
+  <div id="Search">
+  <!--Search area-->
+	<form>
+	<p>Search Movies:  <input type="text" id="term" name="q" method="get"/>
+	Year: <input type="text" id="Year" name="q" method="get"/>
+	<select id="lang">
+	<option value="">Language</option>
+	<option value="en">English</option>
+	<option value="es">Spanish</option>
+	<option value="fr">French</option>
+	<option value="de">German</option>
+	</select>
+	<input id="sButton" type="submit" value="Search"></p>
+		<div id="pages"><p>Pages:<a href="#" id="page1"> 1 </a><a href="#" id="page2"> 2 </a><a href="#" id="page3"> 3 </a><a href="#" id="page4"> 4 </a><a href="#"> 5 </a></p></div>
+	</form>
+ </div>
+ 
+ 
+ 
+ 
+ 
+	
+ 
+ <div id="view">
+  a
+   <button onclick="changeStyle('mlist.css')">List View</button>
+  </div> <!-- Clicking on this will change the  view of the layout-->
+
+  
+  
+  
+ 
+
+<div id="movieSearch">
+<h2>Movie Search Results</h2>
+</div>
+<div id="favorites">
+	<h2>Favorites</h2>
+	<div id="favList"></div>
+</div>
+</body>
+</html>

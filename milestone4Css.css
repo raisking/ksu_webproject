@@ -1,0 +1,151 @@
+<style>
+
+	a:link{
+		text-decoration: none;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+
+	ul li {	
+			list-style-type: none;	
+			padding: 5px;
+	}
+	a:hover {
+		font-weight: bold;
+		color: red;
+	}
+	#flexbox
+	{
+		display: flex; 
+		flex-wrap: wrap;
+		width: 37%;
+	}
+		
+	#box2
+	{
+		border: 1px solid #003366;
+		display: flex; 
+		flex-wrap: wrap;
+		width: 37vw;
+	}
+		
+	.boxitem
+	{
+		border: 1px solid #003366;
+		border-radius: 0px;
+		background: none;
+		width: 99%;
+		margin: 5px;
+		height: 80px;
+		padding: 5px;
+	}
+		
+	.boxitem2
+	{
+		border: 1px solid #003366;
+		border-radius: 0px;
+		background: none;
+		width: 99%;
+		margin: 5px;
+		padding: 5px;
+		height:80px;
+	}   
+		
+	.image
+	{
+		margin-right: auto;
+		height: 250px;
+		width: 200px;
+		margin: 5px;
+		float: left;
+	}
+	.oldEnglish{
+		font-family: Impact, Charcoal, sans-serif;
+		color: #003366;
+	}
+	.change{
+		
+		text-align: center;
+		width: 420px;
+		border: 0px solid #003366;
+		margin-top: 280px;
+		margin-bottom: 0px;
+		margin-right: 0px;
+		margin-left: 6px;
+		background-color: none;
+		border-radius: 10px;
+		text-decoration: none;
+	}
+	.change1{
+		
+		margin-left: 140px;
+		margin-bottom: 20px;
+	}
+	a:link{
+		text-decoration: none;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+    .super{
+		background-color: red;
+	}
+	.header
+	{
+        border-radius: 10px;
+		background-color: #003366;
+		position:fixed; top: 0px; left: 0px;
+		margin: 15px;
+        width: 35%;
+		padding: 10px;
+    }
+	.header h1{
+		
+		color: white;
+	}
+ 	#bookdetails
+	{
+		border: 1px solid #003366;
+		padding: 15px;
+		border-radius: 5px;
+        display: inline-block;
+        flex-direction: column;
+        justify-content: space-between;
+		position: fixed;
+		top: 15px;
+		right: 0px;
+		overflow:auto;
+        width: 60%;;
+		
+	}
+        
+	#subbookdetails{
+		background-color: black;
+		
+	}	
+    ul.pageNo {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+	}
+
+
+
+	ul.pageNo li {
+		display: inline;
+		
+		}
+
+	ul.pageNo li a {
+		color: white;
+		float: border-top-width;
+		padding: 10px;
+		font-size: 120%;
+	}	
+	 body,h1,h2,h3{
+	font-family: Arial, Helvetica, sans-serif;
+		 }
+	.title{
+	color:#003366; font-size: 15px; 
+	}
+
+		
+		
+</style>

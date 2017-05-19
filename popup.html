@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Details UI: Modal Page</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+	<script id="booklisttemplate" type="text/template">
+		{{#Books}}
+		<div class='booklistitem' id="{{ID}}">
+			<img src='{{Image}}'  width=50 /> {{Title}}
+		</div>
+		{{/Books}}
+	</script>
+	<script id="bookdetailstemplate" type="text/template">
+		<div><input type="button" id="btnHide" value="Close This" /></div>
+		<div class='book'>
+			<h2>{{Title}}</h2>
+			<h3>{{SubTitle}}</h3>
+			<img src='{{Image}}' style="float: left"/>
+			<div style="margin-left: 220px">{{ISBN}} <br> By {{Author}} - {{Year}} - {{Publisher}}
+			<h4>Description</h4>
+				<div>{{Description}}</div>
+				
+			</div>
+		</div>
+	</script>
+	<script type="text/javascript">
+     $(document).ready(function ()
+     {
+         $("#btnSearch").click(function ()
+         {
+            var url="http://it-ebooks-api.info/v1/search/" + $("#searchTerm").val();
+			searchBooks(url);
+         });
+     });
+
+     function searchBooks(servicePoint)
+     {
+         $("#booklist").html("Searching ..."+"<img src='http://vignette1.wikia.nocookie.net/wikiality/images/7/70/ProgressBar.gif/revision/latest?cb=20070406024457'>");
+         //we can use AJAX here because this service provider allows cross origin request
+         $.getJSON(servicePoint, function (jsonData)
+         {
+            $("#booklist").html("");
+			var template = $('#booklisttemplate').html();
+			var html = Mustache.render(template, jsonData);
+			$("#booklist").html(html);
+
+            $(".booklistitem").on('click', function () 
+			{ 
+				$(".booklistitem").css("background-color","");
+				getBookDetails($(this).attr("id"));
+			});
+         });
+     }
+
+     function getBookDetails(bookid)
+     {
+         $("#bookdetails").html("Working ..."+"<img src='http://vignette1.wikia.nocookie.net/wikiality/images/7/70/ProgressBar.gif/revision/latest?cb=20070406024457'>");
+         //we can use AJAX here because this service provider allows cross origin request
+         $.getJSON("http://it-ebooks-api.info/v1/book/" + bookid, function (jsonData)
+         {
+            $("#bookdetails").html("");
+			var template = $('#bookdetailstemplate').html();
+			var html = Mustache.render(template, jsonData);
+			$("#bookdetails").html(html);
+			$("#bookdetails").fadeIn();
+					 
+			$("#btnHide").click(function ()
+			{
+				$("#bookdetails").fadeOut();
+			});
+         });
+     }
+</script>
+<style>
+	#header
+	{
+		background-color: #66ddee;
+		position:fixed; top: 0; left: 0px;
+		width: 100%;
+		padding: 5px;
+	}
+	#maincontent
+	{
+		margin-top:120px;
+	}
+	#booklist
+	{
+		display:flex;
+		flex-wrap:wrap;
+	}
+    .booklistitem
+	{
+		border: thin solid gray;
+		cursor: pointer;
+		margin:1px;
+		width: 32%;
+	}
+	.booklistitem:hover
+	{		background-color: yellow;	}
+	#bookdetails
+	{
+		position: fixed;
+		top: 50px;
+		left: 120px;
+		overflow: auto;
+		width: 80%;
+		height: 80%;
+		background-color: #DDEEFF;
+		padding:10px;
+		display: none;
+		box-shadow: 0px 0px 20px 20px #bbbbbb;
+		outline: 500px solid rgba(0,0,0,0.5);
+	}
+</style>
+</head>
+
+<body>
+<div id="header">
+	<h1>Book search from it-ebooks.info</h1>
+	<input type="text" id="searchTerm" value="javascript" />
+	<input type="button" id="btnSearch" value="Search" />
+</div>
+<div id="maincontent">
+	<div id="booklist"></div>
+</div>
+<div id="bookdetails"></div>
+</body>
+</html>

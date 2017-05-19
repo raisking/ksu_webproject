@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js">
+		</script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#btnCalc1').click(function(){ calculate() });
+            });
+
+            function calculate() {
+                var x = $("#amount").val();
+                var y = $("#rate").val()/100;
+				var z = $("#year").val();
+                var result = x*y*z;
+                $('#result').html("The interest is: $"+result);
+            }
+		</script>
+		<style>
+		span 
+		{
+            width: 120px;
+			display: inline-block;
+			background-color: yellow;
+		}
+		input 
+		{
+            width: 120px;
+			text-align: right;
+		}
+		#btnCalc1
+		{
+			text-align: center;
+			width: 123px;
+		}
+		</style>
+    </head>
+    <body>
+	<h2>Simple Interest Calculator (using jQuery)</h2>
+        <span>Amount:</span> <input type="text" id="amount" value="1000" /> 
+		<br/>
+        <span>Rate (annual):</span> <input type="text" id="rate" value="10" />% 
+        <br/>
+		<span>Number of years:</span> <input type="text" id="year" value="5" />
+		<br/>
+		<span></span> <input id="btnCalc1" type="button" value="Calculate" />
+		<h3 id="result"></h3>
+    </body>
+</html>

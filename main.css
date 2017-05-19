@@ -1,0 +1,108 @@
+a:link{
+	color: none;
+	text-decoration: none;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:100px 100px;	
+	}
+.milestoneLink a{
+	margin-left: 80px;
+	
+	
+}
+
+/* visited link */
+a:visited {
+    color: none;
+		}
+
+/* mouse over link */
+a:hover {
+    color: red;
+	font-weight: bold;
+
+}
+
+body  {
+    background-color: none;
+}
+
+h1 {
+	color: none;
+	font-size: 150%;
+	text-align: center;
+	text-decoration: none;
+}
+h2 {
+	 
+	 padding:0px 100px;	
+	 
+	
+}
+img {	
+    position: relative;
+    left: 0px;
+    z-index: -1;
+}
+p{
+  padding:0px 100px;	
+  font-family:Arial, Helvetica, sans-serif;
+}
+p.copyright{
+	color:white;
+	padding:0px; margin:0px;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+div.container {
+	border-radius: 5px;
+	margin: auto;
+    border: 2px solid #003366;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #003366;
+    text-align: center;
+}
+article {
+    margin-left: 10px;
+    padding: 1em;
+}
+
+.header{
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+.containerMilestone{
+	border-radius: 5px;
+	margin: auto;
+    border: 2px solid #003366;
+}
+.milestone{
+	border-radius: 5px;
+	margin: auto;
+    border: 2px solid #003366;
+	background-color: #003366;
+	text-align: center;
+	color: white;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.containerMilestone2{
+	border-radius: 5px;
+	margin: auto;
+    border: 2px solid #003366;
+}
+.milestone2{
+	border-radius: 5px;
+	margin: auto;
+    border: 2px solid #003366;
+	background-color: #003366;
+	text-align: center;
+	color: white;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#list ul li a{
+	text-decoration: none;
+	
+}

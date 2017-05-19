@@ -1,0 +1,871 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 17,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "rkZiCAAAQBAJ",
+   "etag": "5P5aLC6MSIM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/rkZiCAAAQBAJ",
+   "volumeInfo": {
+    "title": "Thinking in CSS",
+    "authors": [
+     "Aravind Shenoy"
+    ],
+    "publisher": "Packt Publishing Ltd",
+    "publishedDate": "2014-04-14",
+    "description": "Web designing is an integral part of developing web based applications. While HTML is used to define the structure of the webpage, CSS is used for styling. With CSS, we can separate presentation from content. The purpose of CSS was to break ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781783552665"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1783552662"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 24,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=rkZiCAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=rkZiCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=rkZiCAAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=rkZiCAAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-rkZiCAAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "2"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=rkZiCAAAQBAJ&rdid=book-rkZiCAAAQBAJ&rdot=1&source=gbs_api"
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=rkZiCAAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "mGx1MyjwM8AC",
+   "etag": "YHwendtoF44",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/mGx1MyjwM8AC",
+   "volumeInfo": {
+    "title": "What Is HTML5?",
+    "authors": [
+     "Brett McLaughlin"
+    ],
+    "publisher": "\"O'Reilly Media, Inc.\"",
+    "publishedDate": "2011-07-13",
+    "description": "HTML5: Everyone’s using it, nobody knows what it is. I realize that sounds more like a line out of an existential movie — maybe Waiting for Godot or a screenplay by Sartre — than a statement about HTML5. But it’s really the truth: most of the ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781449314491"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "144931449X"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 10,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 4,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "0.3.2.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=mGx1MyjwM8AC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=mGx1MyjwM8AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=mGx1MyjwM8AC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=mGx1MyjwM8AC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-mGx1MyjwM8AC"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "6"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=mGx1MyjwM8AC&rdid=book-mGx1MyjwM8AC&rdot=1&source=gbs_api"
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=mGx1MyjwM8AC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "lqGiBgAAQBAJ",
+   "etag": "HKnHv1ZUL8I",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/lqGiBgAAQBAJ",
+   "volumeInfo": {
+    "title": "Simple Harmonic Motion Advanced Level Physics GCE (Easy JavaScript Simulation) 2/2: 20160812 version",
+    "subtitle": "Customized to Advanced Level Physics 9646 H2 PHYSICS",
+    "authors": [
+     "Loo Kang Lawrence Wee"
+    ],
+    "publisher": "Loo Kang WEE Lawrence",
+    "publishedDate": "2015-02-12",
+    "description": "This interactive Oscillators Advanced Level Physics chapter textbook works on both Android and iOS, offering a gorgeous, full-screen experience full of interactive simulations, animated pictures and static photos, and links to videos on Youtube ...",
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 92,
+    "printType": "BOOK",
+    "categories": [
+     "Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.17.16.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=lqGiBgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=lqGiBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=lqGiBgAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=lqGiBgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-lqGiBgAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "22"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=lqGiBgAAQBAJ&rdid=book-lqGiBgAAQBAJ&rdot=1&source=gbs_api"
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "ALL_PAGES",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=lqGiBgAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "LS3_CQAAQBAJ",
+   "etag": "f6iMb4N7aGY",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/LS3_CQAAQBAJ",
+   "volumeInfo": {
+    "title": "Gravity Advanced Level Physics GCE (Easy JavaScript Simulation) 1/2",
+    "subtitle": "20160701 version",
+    "authors": [
+     "Loo Kang Lawrence Wee"
+    ],
+    "publisher": "Loo Kang WEE Lawrence",
+    "publishedDate": "2015-06-26",
+    "description": "This interactive Gravity Advanced Level Physics chapter textbook works on both Android and iOS, offering a gorgeous, full-screen experience full of 16+ interactive simulations even 3D are available at the 3D Kepler's solar system & geostationary ...",
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 124,
+    "printType": "BOOK",
+    "categories": [
+     "Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.17.18.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=LS3_CQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=LS3_CQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=LS3_CQAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=LS3_CQAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-LS3_CQAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "22"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=LS3_CQAAQBAJ&rdid=book-LS3_CQAAQBAJ&rdot=1&source=gbs_api"
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "ALL_PAGES",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=LS3_CQAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "IEhiCAAAQBAJ",
+   "etag": "i9pDNiLqrj0",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/IEhiCAAAQBAJ",
+   "volumeInfo": {
+    "title": "Thinking in JavaScript",
+    "authors": [
+     "Aravind Shenoy"
+    ],
+    "publisher": "Packt Publishing Ltd",
+    "publishedDate": "2014-04-14",
+    "description": "JavaScript is a scripting language for the web. Before we delve into the intricacies of JavaScript, we need to know why it is used. While HTML tells your browser how the page will look, JavaScript will be used for dynamic content and to add ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781783552689"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1783552689"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 25,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=IEhiCAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=IEhiCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=IEhiCAAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=IEhiCAAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-IEhiCAAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "2"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=IEhiCAAAQBAJ&rdid=book-IEhiCAAAQBAJ&rdot=1&source=gbs_api"
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=IEhiCAAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "yajEAgAAQBAJ",
+   "etag": "yXIHvwFcOFY",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/yajEAgAAQBAJ",
+   "volumeInfo": {
+    "title": "Introduction to CICS Dynamic Scripting",
+    "authors": [
+     "Chris Rayns",
+     "George Bogner",
+     "Regis David",
+     "Yun Peng Ge",
+     "Guo Liang Huang",
+     "Guan Jun Liu",
+     "James O'Grady",
+     "Adam Rice",
+     "Dennis Weiand",
+     "Zhi Qiu Xie",
+     "Helen Xue",
+     "IBM Redbooks"
+    ],
+    "publisher": "IBM Redbooks",
+    "publishedDate": "2011-06-30",
+    "description": "IBM® CICS® Transaction Server Feature Pack for Dynamic Scripting embeds and integrates technology from WebSphere® sMash into the CICS TS V4.1 run time, helping to reduce the time and cost of CICS application development. The Feature Pack provides ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780738435527"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "073843552X"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 400,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.3.4.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=yajEAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=yajEAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=yajEAgAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=yajEAgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-yajEAgAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "9"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=yajEAgAAQBAJ&rdid=book-yajEAgAAQBAJ&rdot=1&source=gbs_api"
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "ALL_PAGES",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=yajEAgAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "_VtuAwAAQBAJ",
+   "etag": "buOB6qKCSjw",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/_VtuAwAAQBAJ",
+   "volumeInfo": {
+    "title": "Introducing Microsoft SQL Server 2014",
+    "authors": [
+     "Ross Mistry",
+     "Stacia Misner"
+    ],
+    "publisher": "Microsoft Press",
+    "publishedDate": "2014-04-15",
+    "description": "NOTE: This title is also available as a free eBook on the Microsoft Download Center. It is offered for sale in print format as a convenience. Get a head start evaluating SQL Server 2014 - guided by two experts who have worked with the technology ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780133966176"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0133966178"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 144,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.3.3.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=_VtuAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=_VtuAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=_VtuAwAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=_VtuAwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-_VtuAwAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "6"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=_VtuAwAAQBAJ&rdid=book-_VtuAwAAQBAJ&rdot=1&source=gbs_api"
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=_VtuAwAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "1TavBAAAQBAJ",
+   "etag": "nz+LE0uWlcA",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/1TavBAAAQBAJ",
+   "volumeInfo": {
+    "title": "The Absolute Basics: Python 3",
+    "subtitle": "",
+    "authors": [
+     "Phil Corbett"
+    ],
+    "publisher": "Phil Corbett (PhiCorb)",
+    "publishedDate": "2014-10-04",
+    "description": "Covering the absolute basics of starting programming in Python 3, this book allows beginners to get a quick start in developing in Python 3. This includes: - Installing & setting up Python - Using an IDE and creating your first project ...",
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 45,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "0.2.0.0.preview.1",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=1TavBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=1TavBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=1TavBAAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=1TavBAAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-1TavBAAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=1TavBAAAQBAJ&rdid=book-1TavBAAAQBAJ&rdot=1&source=gbs_api"
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/The_Absolute_Basics_Python_3-sample-pdf.acsm?id=1TavBAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=1TavBAAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "9U5I_tskq9MC",
+   "etag": "kQ0HeQkAZFo",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/9U5I_tskq9MC",
+   "volumeInfo": {
+    "title": "Eloquent JavaScript",
+    "subtitle": "A Modern Introduction to Programming",
+    "authors": [
+     "Marijn Haverbeke"
+    ],
+    "publisher": "No Starch Press",
+    "publishedDate": "2011",
+    "description": "Provides information and examples on writing JavaScript code, covering such topics as syntax, control, data, regular expressions, and scripting.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781593272821"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1593272820"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 224,
+    "printType": "BOOK",
+    "categories": [
+     "COMPUTERS"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 2,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "0.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=9U5I_tskq9MC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=9U5I_tskq9MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=9U5I_tskq9MC&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=9U5I_tskq9MC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-9U5I_tskq9MC"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "4"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 23.95,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 13.49,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=9U5I_tskq9MC&rdid=book-9U5I_tskq9MC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 2.395E7,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.349E7,
+       "currencyCode": "USD"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=9U5I_tskq9MC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "5Li6AgAAQBAJ",
+   "etag": "YKiXorwzbPA",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/5Li6AgAAQBAJ",
+   "volumeInfo": {
+    "title": "DB2 Workload Manager for Linux, UNIX, and Windows",
+    "authors": [
+     "Whei-Jen Chen",
+     "Bill Comeau",
+     "Tomoko Ichikawa",
+     "S Sadish Kumar",
+     "Marcia Miskimen",
+     "H T Morgan",
+     "Larry Pay",
+     "Tapio Vaattanen",
+     "IBM Redbooks"
+    ],
+    "publisher": "IBM Redbooks",
+    "publishedDate": "2008-05-19",
+    "description": "DB2 Workload Manager (WLM) introduces a significant evolution in the capabilities available to database administrators for controlling and monitoring executing work within DB2. This new WLM technology is directly incorporated into the DB2 engine ...",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780738485386"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0738485381"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 372,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.2.4.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=5Li6AgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=5Li6AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "previewLink": "http://books.google.com/books?id=5Li6AgAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=5Li6AgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-5Li6AgAAQBAJ"
+   },
+   "layerInfo": {
+    "layers": [
+     {
+      "layerId": "geo",
+      "volumeAnnotationsVersion": "18"
+     }
+    ]
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 0.0,
+     "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=5Li6AgAAQBAJ&rdid=book-5Li6AgAAQBAJ&rdot=1&source=gbs_api"
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "ALL_PAGES",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=5Li6AgAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  }
+ ]
+}

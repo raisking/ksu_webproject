@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<title>Milestone 1 Part3</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="mile1part3.css">	  
+</head>
+<body>
+<h2>Milestone 1 Part 3</h2>
+<p><a href="milestone_main.html">Back</a></p>
+    <div id = "info"></div>
+    <script>	
+		$.getJSON('part3.json', function(gg) {
+					$('<div class="mileInfo"></div>').append("<div id='books'>" + 
+						"<img src=" + gg.volumeInfo.imageLinks.small +"'><b><h1>" + gg.volumeInfo.title + "</h1>"+
+						"" + gg.volumeInfo.subtitle + 
+						"<p>Authors: </b>" + gg.volumeInfo.authors + "</p>"+
+						"<p><b>Publisher:</b>" + gg.volumeInfo.publisher + "</p>"+
+						"<p><b>Year Published:&nbsp;&nbsp;</b>" + gg.volumeInfo.publishedDate + "</p>"+
+						"<p><b>Categories:</b>" + gg.volumeInfo.categories + "</p>"+
+						"<p>" + gg.volumeInfo.description + "</p>"						
+						).appendTo('#info');
+		});
+		</script>
+
+</body>
+
+</html>
