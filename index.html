@@ -6,16 +6,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/app.css">  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
   crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+<link rel="stylesheet" type="text/css" href="css/app.css"> 
 </head>
 <body>
-<header>
-<nav class="navbar navbar-default navbar-fixed-top">
+<div class ="container-fluid">
+<nav class="navbar navbar-inverse bg-primary navbar-fixed-top">
           <div class="container main-navbar">
             <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -37,53 +38,50 @@
                     <li><a href="https://www.linkedin.com/in/prakash-rai-89398011a/" target="blank">Linkedin</a></li>  
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
-                    <button type="button" class="btn btn-primary"><a href="../resume/Resume_prai.pdf">Download Resume</a><i class="fa fa-hand-peace-o" aria-hidden="true"></i></button>
+                      <a href="../resume/Resume_prai.pdf">
+                    <button type="button" class="btn btn-primary">
+                        <i class="fa fa-hand-peace-o" aria-hidden="true">
+                      Download Resume</i></button></a>
                   </ul>
           </div><!--/main-navbar-->
         </div>
   </nav><!--/nav closed-->
 </div><!--/thankyou-label-->
-</header>
+</div>
 /*====================================================HEADER MENU===========================================*/
-
-</div> 
-
   <div class="container-fluid">   
-    <div class="row">
-         <header>
-             <h2 class="header">IT 4203 - Milestone and Term Project- Advance Web Development, Fall 2016.</h2>
-             <h3 class ="text-center">Kennesaw State University <br>College of Computing and Software Engineering</h3>
-          </header>
-          <div class="container">
-                    <h2>About Me</h2>
-                    <p>My name is Prakash Rai. I am senior BSIT major student at Kennesaw State Univerity.  
+
+          <div class="container myDetail">
+              <h2 class="text-center">IT 4203 - Milestone and Term Project- Advance Web Development, Fall 2016.</h2>
+              <h3 class ="text-center">Kennesaw State University <br>College of Computing and Software Engineering</h3>
+ 
+              <div class ="row">
+                <div class ="col-md-2">
+                  <img src="images/prakash.jpg" class="img-responsive mypic">
+                </div>
+                <div class ="col-md-9">
+                    <p id ="aboutMe">My name is Prakash Rai. I am senior BSIT major student at Kennesaw State Univerity.  
                       I am seeking a challenging career in which I can hone my skills, 
-                      gain a quality experience, build a passion and learn new technologies. </p>
-                      
+                      gain a quality experience, build a passion and learn new technologies. 
+                      <br>
                       <br>
                     Professor/Course information: <a href =" http://it4203.jackzheng.net" > http://it4203.jackzheng.net </a>
                   </p>
-                  <h4> Course objectives/learning outcomes </h4>
-                  <ul>
+                  </div>
+                  </div>
+               
+                  <h4 class="courseObjective"> Course objectives/learning outcomes </h4>
+                  <ul class="list">
                     <li>Apply asynchronous technologies (AJAX) in single-page web applications. </li>
                     <li>Program with standard data exchange format of XML and JSON.</li>
                     <li>Integrate data and services provided from third party services via standard RESTful web APIs.</li>
                     <li>Utilize major SPA user interface design patterns and best practices.</li>
-                  </ul> 
-                <div class="container img-html">
-                  <div class="img-fluid"><img src=images\html5.png  width="270" height="200"></div>
-                  <div class="img-fluid"><img src=images\css.jpg  width="270" height="200"></div>
-                  <div class="img-fluid"><img src=images\js.png  width="270" height="200"></div>  
-                </div>
-        </div>
-  </div>
-</div>
+                  </ul>
 
-<footer>
-  <div class="jumbotron end-footer"> 
-        <div class="container footer-wrapper">
-              <p>Contact me at any of my social media sites below!<br>&copy; Copyright 2017</p>
-            <div class="container media-icon">
+
+<div class="container footer">
+              <p id="contactMe" class="text-center">Contact me at any of my social media sites below!<br>&copy; Copyright 2016</p>
+            <div class="container text-center">
                     <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/prakash-rai-89398011a/">
                     <span class="fa fa-linkedin"></span></a>
                      <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/raiprakas007">
@@ -96,9 +94,9 @@
                     <span class="fa fa-twitter"></span></a>
             </div>
         </div> 
-</div><!--/end-footer-->
 
-</footer>
+      </div>
+    </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
