@@ -34,10 +34,18 @@ body{
     margin-top: 100px;
     padding: 30px;
 }
-
+/* 
 a:link{
     color: #fff;
-}
+} */
 .list{
     font-size: 1.4em;
+}
+#navbar{
+    background-color: #413E3E;
+    padding: 5px;
+}
+#resumeId{
+    margin-top: 5px;
+    margin-right: 15px;
 }
