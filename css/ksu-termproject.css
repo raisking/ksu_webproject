@@ -86,7 +86,7 @@ html {
     
         border-bottom: none;
     
-        background-color: black;
+        background-color: #003366;
     
         padding: 5px 80px;
     
@@ -214,7 +214,7 @@ html {
     
         padding: 10px 10px 10px 10px;
     
-        background-color: black;
+        background-color: #003366;
     
         border: 1px solid black;
     
@@ -282,7 +282,7 @@ html {
     
         color: red;
     
-        background-color: black;
+        background-color: #003366;
     
         overflow: auto;
     
@@ -440,7 +440,7 @@ html {
     
             font-weight:bold;
     
-            background-color:black;
+            background-color:#003366;
     
             z-index:99;
     
