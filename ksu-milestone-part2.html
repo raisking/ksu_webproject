@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+
+	<title>Bookshelf</title>
+     
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link href="CSSM1P3.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+
+</head>
+
+<script>
+
+    $(function () {
+
+
+
+        
+         var service_point1 = "https://www.googleapis.com/books/v1/users/102270121096513839701/bookshelves/1001/";
+        var service_point2 = "https://www.googleapis.com/books/v1/users/102270121096513839701/bookshelves/1001/volumes";
+
+
+
+        $.getJSON(service_point2, function (json2) {
+
+
+
+            //$("#shelf").text(json.title); 
+
+
+
+            resultHTML = "";
+
+            for (i in json2.items) {
+
+                var booktitle = json2.items[i].volumeInfo.title;
+
+                var bookid = json2.items[i].id;
+
+                var cover = json2.items[i].volumeInfo.imageLinks.smallThumbnail;
+                var url = json2.items[i].volumeInfo.infoLink;
+
+
+
+                resultHTML += "<div class='bookdiv'>";
+
+                resultHTML += "<img src='" + cover + "' style='float: left' />";
+
+                resultHTML += "<a href="  + url + "'>" + booktitle + "</a>";
+
+                resultHTML += "</div>";
+
+            }
+
+            $("#results").html(resultHTML);
+
+            $(".bookdiv").css("width", "300px");
+
+        });
+
+    });
+
+</script>
+
+<body>
+
+
+
+<div id = "header">
+
+                  <h1 class="ht">BookShelf</h1>
+
+                
+
+    
+
+     </div>
+
+
+<div id="results" style="display: flex; flex-wrap: wrap;"></div>
+
+
+ <p class="par ">
+  <a class="par" href="Milestone2.html"> Home </a> </p>
+
+
+
+
+</body>
+
+</html>

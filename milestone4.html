@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Milestone 1 Part 4</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/mile1part4.css">
+</head>
+
+<body>
+<h2>Milestone 1 Part 4</h2>
+<p><a href="milestone_main.html">Back</a></p>
+    <div id = "items"></div>
+    <script>
+         $(function(){
+			
+               $.getJSON("part4.json", function(gg) {
+
+                   var itemsHTML=""; 
+                   
+                    for (i in gg.items)  //"<img src=" +json.Image+">"
+                        {
+                              itemsHTML+="<br>" + 
+							  "<h1>" + gg.items[i].volumeInfo.title + "</h1>" +
+							  "<h2><i>" + gg.items[i].volumeInfo.subtitle + "</h2></i>" + 
+							  ""+"<img src=" + gg.items[i].volumeInfo.imageLinks.smallThumbnail +">"+ "<br>"+
+							  "<p><b>Authors:</b> " + gg.items[i].volumeInfo.authors + "</p>" + 
+							  "<p><b>Published Date:</b> " + gg.items[i].volumeInfo.publishedDate + "</p>" + 
+							  "<p><b>Page Count:</b> " + gg.items[i].volumeInfo.pageCount + "</p>" +
+							  "<p><b>Sales Info Country:</b> " + gg.items[i].saleInfo.country + "</p>" +
+							  "<p><b>Preview Link: </b>" +"<a href=" + gg.items[i].volumeInfo.previewLink +">"+ gg.items[i].volumeInfo.previewLink +"</a></p>" + 
+							  "<p><b>Info Link: </b>"+"<a href=" + gg.items[i].volumeInfo.infoLink +">"+ gg.items[i].volumeInfo.infoLink +"</a></p>"+
+							  "" + gg.items[i].volumeInfo.description + "</p>"+"<br><br>"+"</p>";
+							  
+							  
+							  
+	//"<br>"+"<p>Download:"+"<a href="+ json.Download +">" + json.Download + "</a></p>"); 
+
+//<a href="+ json.Download +">Download</a>
+                        }
+                    $("#items").html(itemsHTML);
+                 });
+            });
+      
+  </script>
+</body>
+
+</html>

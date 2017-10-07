@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Milestone1 Part 1</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/mile1part1.css">
+</head>
+
+<body>
+    <h2>Milestone 1 Part 1</h2>
+    <p><a href="milestone_main.html">Back</a></p>
+    <div id="Books"></div>
+    <script>
+        $(function () {
+            $.getJSON("mil.json", function (json) {
+                var courseHTML = "";
+                for (i in json.Books) {
+                    courseHTML +=
+                        "<h1>" + json.Books[i].Title + "</h1>" +
+                        "<h2><i>" + json.Books[i].SubTitle + "</h2></i>" +
+                        "<p class=fontDescription>" + json.Books[i].Description + "</p>" +
+                        "" + "<img src=" + json.Books[i].Image + ">" +
+                        "<p><b>ID:</b>" + json.Books[i].ID + "</p>" +
+                        "<p><b>ISBN:</b>" + json.Books[i].isbn + "</P></br></br></br></br></br></br></br></br></br></br></br></br></hr></br>";
+                }
+                $("#Books").html(courseHTML);
+            });
+        })
+
+    </script>
+    <script>
+        $(function () {
+
+            $.getJSON("m1.json", function (json) //json is the parameter name to hold the response data and it will be converted to a JS object by the function
+
+            {
+
+
+
+
+                var courseHTML = "";
+
+
+
+                for (i in json.Books) {
+
+                    courseHTML += "<br>" + "<p> ID:" + json.Books[i].ID + "</p>" + "<p> Title:" + json.Books[i].Title + "</p> " + "<br>" + "<p> Subtitle:" + json.Books[i].SubTitle + "</p>" + "<br>" + "<p> Description:" + json.Books[i].Description + "</p>" + "<br>" + "<p> Image: " + "<img src=" + json.Books[i].Image + ">" + "</p>" + "<br>" + "<p> isbn: " + json.Books[i].isbn + "</p>" + "<br>";
+
+                }
+
+                $("#Books").html(courseHTML);
+
+            });
+
+        })
+    </script>
+
+</body>
+
+</html>

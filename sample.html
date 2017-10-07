@@ -1,0 +1,50 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+<title>Milestone 1 Part 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+        .w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
+        .fa-anchor,.fa-coffee {font-size:200px}
+    </style>
+
+    <script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script type = "text/javascript" language = "javascript">
+     $(document).ready(function() {
+			
+               $.getJSON('http://it-ebooks-api.info/v1/search/modern%20web', function(jd) {
+
+                   var bookHTML=""; 
+                   
+                    for (i in jd.Books)
+                        {
+                              bookHTML+='<br>' + '<p> ID: ' + jd.Books[i].ID + '</p>' + '<br>' + 
+                              '<p> Title: ' + jd.Books[i].Title + '</p>' + '<br>' + '<p> SubTitle: ' + jd.Books[i].SubTitle + 
+                              '</p>' + '<br>' + '<p> Desciption: ' + jd.Books[i].Description + '</p>' + '<br>' + '<p> Image: </p>'
+                               + "<img src=" + jd.Books[i].Image + '>';
+                        }
+                    $('#Book').html(bookHTML);
+                 }); 
+            });
+      
+  </script>
+    
+</head>
+
+<body>
+
+<h2>Milestone 1 Part 1</h2>
+		
+    <div id = "Book"></div>
+    
+</body>
+
+</html>

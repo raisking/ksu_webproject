@@ -1,0 +1,836 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 730,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "Wfan6L9RGgYC",
+      "etag": "YdLUoorzrDc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Wfan6L9RGgYC",
+      "volumeInfo": {	
+        "title": "The Modern Web",
+        "subtitle": "Multi-device Web Development with HTML5, CSS3, and JavaScript",
+        "authors": [
+          "Peter Gasston"
+        ],
+        "publisher": "No Starch Press",
+        "publishedDate": "2013",
+        "description": "Provides information on Web development for multiple devices, covering such topics as structure and semantics, device APIs, multimedia, and Web apps.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781593274870"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1593274874"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 264,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 3,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.2.2.0.preview.3",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Wfan6L9RGgYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Wfan6L9RGgYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=Wfan6L9RGgYC&printsec=frontcover&dq=modern+web&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=Wfan6L9RGgYC&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/The_Modern_Web.html?hl=&id=Wfan6L9RGgYC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 27.95,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 15.37,
+          "currencyCode": "USD"
+        },
+        "buyLink": "http://books.google.com/books?id=Wfan6L9RGgYC&dq=modern+web&hl=&buy=&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 27950000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 15370000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=Wfan6L9RGgYC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Provides information on Web development for multiple devices, covering such topics as structure and semantics, device APIs, multimedia, and Web apps."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "NruUsGqAcSAC",
+      "etag": "s8SaMTJShqM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/NruUsGqAcSAC",
+      "volumeInfo": {
+        "title": "Visual Design for the Modern Web",
+        "authors": [
+          "Penny McIntire"
+        ],
+        "publisher": "New Riders",
+        "publishedDate": "2007-11-14",
+        "description": "Just as great artists must understand their tools, great Web designers must understand the technology behind their art. In Visual Design for the Web, author Penny McIntire shows novice Web designers how to use their tools--including HTML, CSS, and JavaScript--in conjunction with the principles of aesthetics and usability to become masters of their craft. Chapters begin with explanations of the terminology and techniques of web structures, then demonstrate how to apply the rules of design to create beautiful sites. The book: Illustrates how fundamental principles of design apply to the web Includes charts, diagrams, and graphics to enhance learning and retention Covers site analysis, navigation, layout, color, graphics, typography and forms Demonstrates multiple techniques for getting just the right look and feel for your web sites Focuses on the characteristics that make sites usable, engaging, and memorable",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "013270501X"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780132705011"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 360,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.10.5.0.preview.3",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=NruUsGqAcSAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=NruUsGqAcSAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=NruUsGqAcSAC&printsec=frontcover&dq=modern+web&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=NruUsGqAcSAC&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Visual_Design_for_the_Modern_Web.html?hl=&id=NruUsGqAcSAC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 39.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 31.19,
+          "currencyCode": "USD"
+        },
+        "buyLink": "http://books.google.com/books?id=NruUsGqAcSAC&dq=modern+web&hl=&buy=&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 39990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 31190000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=NruUsGqAcSAC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The book: Illustrates how fundamental principles of design apply to the web Includes charts, diagrams, and graphics to enhance learning and retention Covers site analysis, navigation, layout, color, graphics, typography and forms ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "yDyJ-iH6vpwC",
+      "etag": "dXOPAIS1Ytk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/yDyJ-iH6vpwC",
+      "volumeInfo": {
+        "title": "Software Engineering for Modern Web Applications: Methodologies and Technologies",
+        "subtitle": "Methodologies and Technologies",
+        "authors": [
+          "Brandon, Daniel M."
+        ],
+        "publisher": "IGI Global",
+        "publishedDate": "2008-06-30",
+        "description": "\"This book presents current, effective software engineering methods for the design and development of modern Web-based applications\"--Provided by publisher.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781599044941"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1599044943"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 402,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.1.0.preview.1",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=yDyJ-iH6vpwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=yDyJ-iH6vpwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=yDyJ-iH6vpwC&printsec=frontcover&dq=modern+web&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=yDyJ-iH6vpwC&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Software_Engineering_for_Modern_Web_Appl.html?hl=&id=yDyJ-iH6vpwC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 180,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 144,
+          "currencyCode": "USD"
+        },
+        "buyLink": "http://books.google.com/books?id=yDyJ-iH6vpwC&dq=modern+web&hl=&buy=&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 180000000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 144000000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Software_Engineering_for_Modern_Web_Appl-sample-pdf.acsm?id=yDyJ-iH6vpwC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=yDyJ-iH6vpwC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "&quot;This book presents current, effective software engineering methods for the design and development of modern Web-based applications&quot;--Provided by publisher."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "7z_fCQAAQBAJ",
+      "etag": "Fd0T9r0Xg28",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/7z_fCQAAQBAJ",
+      "volumeInfo": {
+        "title": "Web Scraping with Python",
+        "subtitle": "Collecting Data from the Modern Web",
+        "authors": [
+          "Ryan Mitchell"
+        ],
+        "publisher": "\"O'Reilly Media, Inc.\"",
+        "publishedDate": "2015-06-15",
+        "description": "Learn web scraping and crawling techniques to access unlimited data from any web source in any format. With this practical guide, you’ll learn how to use Python scripts and web APIs to gather and process data from thousands—or even millions—of web pages at once. Ideal for programmers, security professionals, and web administrators familiar with Python, this book not only teaches basic web scraping mechanics, but also delves into more advanced topics, such as analyzing raw data or using scrapers for frontend website testing. Code samples are available to help you understand the concepts in practice. Learn how to parse complicated HTML pages Traverse multiple pages and sites Get a general overview of APIs and how they work Learn several methods for storing the data you scrape Download, read, and extract data from documents Use tools and techniques to clean badly formatted data Read and write natural languages Crawl through forms and logins Understand how to scrape JavaScript Learn image processing and text recognition",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781491910252"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1491910259"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 256,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.12.13.0.preview.3",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=7z_fCQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=7z_fCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=7z_fCQAAQBAJ&printsec=frontcover&dq=modern+web&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=7z_fCQAAQBAJ&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Web_Scraping_with_Python.html?hl=&id=7z_fCQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 27.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 15.87,
+          "currencyCode": "USD"
+        },
+        "buyLink": "http://books.google.com/books?id=7z_fCQAAQBAJ&dq=modern+web&hl=&buy=&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 27990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 15870000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=7z_fCQAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Ideal for programmers, security professionals, and web administrators familiar with Python, this book not only teaches basic web scraping mechanics, but also delves into more advanced topics, such as analyzing raw data or using scrapers for ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "GBOpAwAAQBAJ",
+      "etag": "gkmkxr7lbbw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/GBOpAwAAQBAJ",
+      "volumeInfo": {
+        "title": "Modern Web Development with IBM Websphere",
+        "subtitle": "Developing, Deploying, and Managing Mobile and Multi-Platform Apps",
+        "authors": [
+          "Kyle Brown",
+          "Roland Barcia",
+          "Karl Bishop",
+          "Matthew Perrins"
+        ],
+        "publisher": "Pearson Education",
+        "publishedDate": "2014-06-08",
+        "description": "Online resources also available to purchasers.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780133067033"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0133067033"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 384,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=GBOpAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=GBOpAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=GBOpAwAAQBAJ&printsec=frontcover&dq=modern+web&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=GBOpAwAAQBAJ&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Modern_Web_Development_with_IBM_Webspher.html?hl=&id=GBOpAwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=GBOpAwAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Online resources also available to purchasers."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "sS2LBAAAQBAJ",
+      "etag": "kbJHtPe7X2s",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/sS2LBAAAQBAJ",
+      "volumeInfo": {
+        "title": "Write Modern Web Apps with the MEAN Stack",
+        "subtitle": "Mongo, Express, AngularJS, and Node.js",
+        "authors": [
+          "Jeff Dickey"
+        ],
+        "publisher": "Pearson Education",
+        "publishedDate": "2014-09-01",
+        "description": "Traditionally, web applications have been architected so that the back-end houses all the front-end code. This has resulted in heavy projects that are difficult to manage and scale. This book will explain a new way to write web applications by treating the front-end as if it were a third-party (such as a mobile client). This book, written by a practicing MEAN developer, will take a holistic approach to using the MEAN JavaScript platform for creating modern web applications and lay out how to use the MEAN (Mongo, Express, AngularJS, and Node.js) set of tools to create a web application, from installation and setup of the tools to debugging and deploying your app. After an introduction to how web development is changing and the advantages of using the MEAN stack, the author jumps into an introduction to each tool and then dives into using the complete JavaScript-based application stack to build, test, and deploy apps.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780133930153"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0133930157"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 246,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=sS2LBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=sS2LBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=sS2LBAAAQBAJ&printsec=frontcover&dq=modern+web&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=sS2LBAAAQBAJ&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Write_Modern_Web_Apps_with_the_MEAN_Stac.html?hl=&id=sS2LBAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=sS2LBAAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This has resulted in heavy projects that are difficult to manage and scale. This book will explain a new way to write web applications by treating the front-end as if it were a third-party (such as a mobile client)."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "aB6jWdpdcZgC",
+      "etag": "d57wyN5lPJs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/aB6jWdpdcZgC",
+      "volumeInfo": {
+        "title": "AJAX and PHP",
+        "subtitle": "Building Modern Web Applications",
+        "authors": [
+          "Bogdan Brinzarea",
+          "Audra Hendrix"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2009-12-16",
+        "description": "Build user friendly Web 2.0 Applications with JavaScript and PHP.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781847197733"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1847197736"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 308,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.1.1.0.preview.3",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=aB6jWdpdcZgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=aB6jWdpdcZgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=aB6jWdpdcZgC&printsec=frontcover&dq=modern+web&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=aB6jWdpdcZgC&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/AJAX_and_PHP.html?hl=&id=aB6jWdpdcZgC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 23.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 14.59,
+          "currencyCode": "USD"
+        },
+        "buyLink": "http://books.google.com/books?id=aB6jWdpdcZgC&dq=modern+web&hl=&buy=&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 23990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 14590000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=aB6jWdpdcZgC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Build user friendly Web 2.0 Applications with JavaScript and PHP."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "63dKBQAAQBAJ",
+      "etag": "xYVLDG+pmhc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/63dKBQAAQBAJ",
+      "volumeInfo": {
+        "title": "CSS Animations and Transitions for the Modern Web",
+        "authors": [
+          "Steven Bradley"
+        ],
+        "publisher": "Adobe Press",
+        "publishedDate": "2014-11-10",
+        "description": "Modern websites use a variety of animated effects not only to improve usability but also to delight and surprise users. Some of these effects require complex scripting or programming skills, but many are within the grasp of designers who are already familiar with CSS and HTML. CSS Animations and Transitions for the Modern Web shows designers how to add movement to web pages over time using CSS3 style definitions. Author Steven Bradley begins as simply as possible and uses elementary skills as the basis for more advanced techniques. Conceptual explanation is combined with specific examples to give designers a solid foundation in the art of creating dynamic and appealing websites. Steven’s examples are posted at peachpit.com so readers can see the animations in action and download the code files for further study. Instructions for access are in the “Getting Started” section. With CSS Animations and Transitions for the Modern Web, you’ll learn how to make your websites more vibrant and compelling with user interfaces that are functional, reliable, and usable, as well as beautiful. Up-to-date information on current browser support for CSS animations and transitions An introduction to manipulating web page objects in both 2D and 3D space Techniques for creating smooth transitions between object states An overview of Disney’s principles for creating realistic animation and how they apply to web page designs",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780133980547"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0133980545"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 320,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.3.2.0.preview.3",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=63dKBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=63dKBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=63dKBQAAQBAJ&pg=PA6&dq=modern+web&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=63dKBQAAQBAJ&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/CSS_Animations_and_Transitions_for_the_M.html?hl=&id=63dKBQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 31.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 17.27,
+          "currencyCode": "USD"
+        },
+        "buyLink": "http://books.google.com/books?id=63dKBQAAQBAJ&dq=modern+web&hl=&buy=&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 31990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 17270000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=63dKBQAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... is to see your code come to life in a browser. Remember the first time you wrote <br>\nsome HTML and a little CSS and then checked a browser to see what you&#39;d done<br>\n? Well, this is like that except better. Before, you placed things on a <b>web</b> page."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "eA1YwwyzbsUC",
+      "etag": "C12gfTJVBFA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/eA1YwwyzbsUC",
+      "volumeInfo": {
+        "title": "Modern Web Design and Development",
+        "authors": [
+          "Smashing Magazine"
+        ],
+        "publisher": "Smashing Magazine",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "3943075087"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9783943075083"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.0.0.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=eA1YwwyzbsUC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=eA1YwwyzbsUC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=eA1YwwyzbsUC&dq=modern+web&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=eA1YwwyzbsUC&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Modern_Web_Design_and_Development.html?hl=&id=eA1YwwyzbsUC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=eA1YwwyzbsUC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "OUDfCQAAQBAJ",
+      "etag": "lU1TgheD6Nk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/OUDfCQAAQBAJ",
+      "volumeInfo": {
+        "title": "Web Scraping with Python",
+        "subtitle": "Collecting Data from the Modern Web",
+        "authors": [
+          "Ryan Mitchell"
+        ],
+        "publisher": "\"O'Reilly Media, Inc.\"",
+        "publishedDate": "2015-06-15",
+        "description": "Learn web scraping and crawling techniques to access unlimited data from any web source in any format. With this practical guide, you’ll learn how to use Python scripts and web APIs to gather and process data from thousands—or even millions—of web pages at once. Ideal for programmers, security professionals, and web administrators familiar with Python, this book not only teaches basic web scraping mechanics, but also delves into more advanced topics, such as analyzing raw data or using scrapers for frontend website testing. Code samples are available to help you understand the concepts in practice. Learn how to parse complicated HTML pages Traverse multiple pages and sites Get a general overview of APIs and how they work Learn several methods for storing the data you scrape Download, read, and extract data from documents Use tools and techniques to clean badly formatted data Read and write natural languages Crawl through forms and logins Understand how to scrape JavaScript Learn image processing and text recognition",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781491910276"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1491910275"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 256,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.0.0.preview.1",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=OUDfCQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=OUDfCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=OUDfCQAAQBAJ&printsec=frontcover&dq=modern+web&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=OUDfCQAAQBAJ&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Web_Scraping_with_Python.html?hl=&id=OUDfCQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=OUDfCQAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}

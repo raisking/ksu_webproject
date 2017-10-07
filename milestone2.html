@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Milestone 1 Part 2</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mile1part2.css">
+</head>
+<body>
+<h2>Milestone 1 Part 2</h2>
+<p><a href="milestone_main.html">Back</a></p>
+<div id="Instructor"></div>
+<script>
+    $(function(){
+        $.getJSON('part2.json', function (json) 
+            {
+                $("#Instructor").html(
+				"<h1>"+json.Title+"</h1>" + 
+				""+"<h2><i>" + json.SubTitle+"</h2></i>"+ 
+				"</p>"+"<img src=" +json.Image+">"+"<br>"+
+				"" + "<p>"+
+				""+"<br>"+json.Description+ "</p>"+
+				"" + "<p><b>By:</b>" +json.Author+
+				"</p>"+"<p><b>ISBN:</b>"+json.ISBN+"</p>"+
+				"" + "<p><b>Year:</b>"+json.Year+"</p>"+
+				"" + "<p><b>Page:</b>"+json.Page+
+				"<p><b>ID:</b>"+json.ID+"</p>"+
+				"</p>"+"<p><b>Publisher:</b>"+ json.Publisher +
+				""+"<p><b>Download:</b>"+"<a href="+ json.Download +">" + json.Download + "</a></p>"); 
+            var courseHTML="";
+            for (i in json.Instructor.Course)
+            {
+                courseHTML+="<br>"+json.Instructor.Course[i].Title+ " - " +json.Instructor.Course[i].Enrollment;
+            }
+            $("#Course").html(courseHTML);																																					
+            }); 
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Google Book Info</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script>
+    $(function(){
+		var id="rkZiCAAAQBAJ"; //or get the parameter value from the URL ?id=Wfan6L9RGgYC; you can Google how to do it.
+		var service_point="https://www.googleapis.com/books/v1/volumes/"+id;
+        $.getJSON(service_point, function (json)
+        {
+			var booksHTML="";
+			var description=json.volumeInfo.description;
+            var title=json.volumeInfo.title;
+			var url=json.volumeInfo.infoLink;
+			var cover=json.volumeInfo.imageLinks.small;
+            var authors =  json.volumeInfo.authors;
+            var publisher =  json.volumeInfo.publisher;
+						 
+			$("#cover").attr("src",cover);
+			$("#title").text(title);
+			$("#webpage").text(url).attr("href",url);        
+            $("#description").text(description);
+            $("#categories").text(categories);
+            $("#authors").text(authors);
+            $("#publisher").text(publisher);
+			//var resultHTML="";
+			//for (i in json.volumeInfo.categories)
+          //  {
+			//	resultHTML+=json.volumeInfo.categories[i]+"; ";
+			//}
+            //$("#category").html(resultHTML);
+		}); 
+    });
+</script>
+</head>
+
+<body>
+	<h1 id="title"></h1>
+<p><a id="webpage"></a></p>
+<img id="cover" height=200 /> 
+<p> Description: </p>
+<div id="description"></div>
+
+
+</body>
+</html>
