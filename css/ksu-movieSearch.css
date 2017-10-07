@@ -1,0 +1,266 @@
+.div-header {
+    border-radius: 10px;
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+/*	border-bottom: none;*/
+    background-color: #003366;
+/*	padding: 5px 80px;*/
+}
+.flexbox-container{
+display: flex;
+}
+
+#topPage h1 {
+    color: white;
+}
+#displayResult h1 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#subtitle {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#topContainer1 {
+    padding: 20px 100px 0px 100px;
+}	
+
+#moveSearchContainer {
+padding-left: 10px;
+}
+
+#movieSearchBox {
+margin-top: 5px;
+width: 500px;	
+/*	margin: 3px;
+    float: left;
+    height: 32px;
+    width: 250px;
+    font-size: 12pt;*/
+
+}
+#page-number{
+margin-top: 4px;
+}
+#profit{
+    border: 0px solid #000099;
+    background-color: gray;
+    border-radius: 0px;
+    position:absolute; 
+    top: 180px;
+    right: 0px;
+    overflow:auto;
+    width: 50%;
+    
+    
+    
+}
+#popularMoviesContainer{
+width: 50%;
+float: right;	
+position: right;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+/*padding: 10px 10px 25px 0px;*/
+/*background-color: white;*/
+/*border: 1px solid #000099;*/	
+}
+
+#searchButton1{
+background-color: black;
+padding: 20px;
+border-radius: 0px;
+}
+#searchButton{
+margin-top: 4px;
+width: 150px;
+}
+#buttonAlign{
+margin-top: 70px;
+border-radius:0px;
+padding-top: 40px;
+background-color: white;
+}
+#Movie{
+width: 100px;
+height: 110px;
+margin: 15px;
+}
+#Movie img{
+    border-radius: 0px;
+    width: 120px;
+    height: 130px;
+    margin: 0px 0px 0px 0px;
+    cursor: pointer;
+}
+#displayResult {
+position:absolute; top: 170px; left: 0px;
+width: 45%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+/*border: 1px solid #000099;*/
+margin-top: 100px;
+margin-left: 67px;
+border-radius: 0px;
+padding: 10px 10px 25px 10px;
+background-color: none;
+overflow: auto;
+
+}
+
+#rating {
+display: inline;
+margin-left: 20px;
+padding: 5px 10px;
+border-radius: 0px;
+color: #000099;
+font-weight: bolder;
+}
+
+#castContainer {
+width: 580px;
+display: inline-block;
+}
+
+#castContainer button {
+background-color: none;
+}
+#displayResult img {
+    border-radius: 5px;
+    width: 150px;
+    height: 220px;
+    margin: 0px 10px 10px 0px;
+}
+#popularMovies img{
+    width: 150px;
+    height: 180px;
+    margin: 0px 0px 0px 0px;
+}
+
+<!------------------------------------------->
+
+.fw-bold {
+    font-weight: bold;
+}
+h1, h3 {
+    display: inline-block;
+    /*margin: 0px;*/
+    /*color: #fff;*/
+}
+.header-img{
+/*background-color: red;*/
+/*float: left;*/
+}
+#movie-col{
+color: #fff;
+margin-top:10px;
+margin-left: 100px;
+}
+button {
+padding: 5px ;
+border: 1px solid gray;
+background-color: #e9e9e9;
+border-radius: 0px;
+outline: none;
+cursor: pointer;
+}
+.resultsHover:hover{
+
+/*background-color: red;*/
+}
+button:hover {
+background-color: none;
+color: red;
+}
+
+button:active {
+border: 2px solid red;
+}
+
+
+.flex-container {
+display: -webkit-flex;
+display: flex;
+}	
+.flexbox1 {
+display: -webkit-flex;
+display: flex;
+height: 35px;
+margin-top: 40px;
+
+}
+.close-displayResult
+{
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:1em;
+    font-weight:bold;
+    background-color:white;
+    z-index:99;
+}
+
+.resultsBoxList{
+padding: 10px;
+width: 800px;
+flex-grow: 1;
+cursor: pointer;
+color: #136cb2;
+font-family: Verdana, Arial, sans-serif;
+font-size: 11pt;
+background-color: white;
+border: 1px solid #000099;
+}
+
+.resultsBoxGrid{
+height: 100px;
+width: 100px;
+color: blue;
+font-family: Verdana, Arial, sans-serif;
+font-size: 11pt;
+background-color: white;
+}
+
+.date {
+color: #000099;
+
+
+}
+a:link{
+    color: black;
+    text-decoration: none;	
+}
+
+.castName {
+display: inline-block;
+width: 240px;
+}
+.pseudolink { 
+color: black; 
+text-decoration:underline; 
+cursor:pointer; 
+}
+
+.bt {
+margin-left: 2px;
+background-color: none;
+margin-top: 40px;
+margin-bottom: 100px;
+float: left;
+}
+.searchline{
+margin-left: 10px;
+margin-top: 17px;
+background-color: none;
+}
+.movielist{
+background-color: black;
+}
+
+
+
