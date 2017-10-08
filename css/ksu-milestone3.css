@@ -89,10 +89,10 @@
 	}
 	.header
 	{
+		margin-top: 6%;	
         border-radius: 10px;
 		background-color: #003366;
 		position:fixed; top: 0px; left: 0px;
-		margin: 15px;
         width: 35%;
 		padding: 10px;
     }

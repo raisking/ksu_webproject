@@ -2,13 +2,11 @@
     border-radius: 10px;
     width: 90%;
     height: 250px;
-    margin: 0 auto;
-/*	border-bottom: none;*/
+    margin-top: 80px;
     background-color: #003366;
-/*	padding: 5px 80px;*/
+
 }
 .flexbox-container{
-   
 display: flex;
 }
 
@@ -262,6 +260,7 @@ background-color: none;
 .movielist{
 background-color: black;
 }
+
 
 
 

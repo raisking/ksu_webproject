@@ -1,43 +1,109 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Movie Database</title>
-  
-  <link rel="stylesheet" type="text/css" href="css/movieSearch.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/movieSearch.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-  <div id="topPage">
+
+    <div classs="container-fluid">
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="http://www.kennesaw.edu" target="_blank">
+                <p id="ksu">Kennesaw State University</<p></p></a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 1 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="milestone1.html">Milestone1 Part 1</a></li>
+                  <li><a href="milestone2.html">Milestone1 Part 2</a></li>
+                  <li><a href="milestone3.html">Milestone1 Part 3</a></li>
+                  <li><a href="milestone4.html">Milestone1 Part 4</a></li>
+                </ul>
+              </li>
+               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 2 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="ksu-milestone2.html">Book Search</a></li>
+                  <li><a href="ksu-milestone-part2.html">Milestone 2 Part 1</a></li>
+               
+                </ul>
+              </li>
+              <li><a href="milestone3part2.html">Milestone 3</a></li>
+              <li><a href="ksu-milestone3.html">Milestone 4</a></li>
+              <li><a href="termproject.html">Term Project</a></li>
+              <li><a href="others.html">Other Project</a></li>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <a href="../resume/Resume_prai.pdf">
+              <button type="button" class="btn btn-primary" id="resumeId">
+                  <i class="fa fa-hand-peace-o" aria-hidden="true">
+                Download Resume</i></button></a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+  <div class="container-fluid  div-header">
 			<!--Main menu with search bar  -->
-			<img src="images/movielogo.jpg" alt="Smiley face" style="float:left;width:150px;height:150px;">
-				<br>
-				<div id="moveSearchContainer" class="flexbox">	
-													<!--Search buttons -->
-													<button class='bt' onclick='gridView()'>Grid View</button>
-													<button class='bt' onclick='listView()'>List View</button>
-													<button class='bt' onclick='javascript:requestPopularMovies()'>Popular Movie</button>
-													<button class='bt' onclick='sortResultsByDate()'>Sort by Release Date</button>;
-													<button class='bt' onclick='hideResults()'>Reset</button>;
-													<div class ="searchline">
-													<input type="search" id="movieSearchBox" value="Everest"/>
-													<button id="searchButton" onclick="searchForMovies()">Search</button>
-													<button id="Page1Results" onclick="Page1()">1</button> 
-													<button id="Page2Results" onclick="Page2()">2</button>
-													<button id="Page3Results" onclick="Page3()">3</button>
-													</div>								
+      <div class="row flexbox-container">
+        <h2 id="movie-col">Movie Search Engine</h2>
+
+      <!-- <div class="col-md-12"> -->
+  				<div id="moveSearchContainer" class="flexbox">	
+  													<!--Search buttons -->
+                            <div class="btn-toolbar" role="toolbar">
+                            <div class="btn-group mr-2" role="group" aria-label="group one">
+        													<button type="button" class='btn btn-primary bt' onclick='gridView()'>Grid View</button>
+        													<button type="button" class='btn btn-primary bt' onclick='listView()'>List View</button>
+        													<button type="button" class='btn btn-primary bt' onclick='javascript:requestPopularMovies()'>
+                                  Popular Movie</button>
+        													<button type="button" class='btn btn-primary bt' onclick='sortResultsByDate()'>Sort by Release Date</button>;
+        													<button type="button" class='btn btn-primary bt' onclick='hideResults()'>Reset</button>
+                              </div>
+                              </div>
+
+                                
+                                    <input class="form-control" type="text" id="movieSearchBox" placeholder="Input movie name"/>
+                           
+                              <div class="btn-group mr-2" role="group" aria-label="basic">
+            											<button type="button" class="btn btn-primary" id="searchButton" onclick="searchForMovies()">Search</button>
+                                  </div>
+                              <div class="btn-group mr-2" id="page-number" role="group" aria-label="basic">
+            											<button type="button" class="btn btn-primary" id="Page1Results" onclick="Page1()">1</button> 
+            											<button type="button" class="btn btn-primary" id="Page2Results" onclick="Page2()">2</button>
+            											<button type="button" class="btn btn-primary" id="Page3Results" onclick="Page3()">3</button>
+                                  <!-- <button type="button" class="btn btn-primary" id="searchButton" onclick="Page3()">Search</button> -->
+  										    	 </div> 
+
+             </div>
+          <div class="col-md-4 header-img">
+                 <img id ="header-img" class="img-responsive" src="images/movielogo.jpg" alt="Smiley face" style="float:left;width:150px;height:150px;">
+        </div>
+                         
 					</div>
-											
+  
+     
+      </div>								
   </div>
 	<a name="topOfPage" style="text-decoration:none;color: inherit"/>
   <div id="topContainer1">
 				<div id="popularMoviesContainer"></div>			
 								<div id="buttonAlign">
-								<div id="displayResult" class="resultsHover"></div>
-								<div id="profit"></div>
-  </div>
+    								<div id="displayResult" class="resultsHover"></div>
+    								<div id="profit"></div>
+                </div>
 <script>
 //  API key and  other variables declared 
 	const key = 'c1f2244dfc243c17b76897f58bfd4629';
@@ -145,6 +211,7 @@ function requestMovieData(id) {
 
   request.send();
 }
+
 //=======================================================================================
 // Display detailed data for a clicked on movie
 function displayMovieData(request){
@@ -221,7 +288,6 @@ function appendCastInfo(length) {
 
   resultsContainer.appendChild(castContainer);
 }
-
 function hideResults() {
   resultsContainer.style.display = 'none';
   movieSearchBox.value = '';
@@ -396,6 +462,9 @@ function testUrl(){
 	</div>
 </script>
 
-	<a name="toCastDetails" style="color: inherit"/>
+  <a name="toCastDetails" style="color: inherit"/>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
