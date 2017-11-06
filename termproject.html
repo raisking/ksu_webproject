@@ -1,7 +1,7 @@
-
-
 <!DOCTYPE html>
+
 <html>
+
 <head>
   <title>Movie Database</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,433 +13,463 @@
   <link rel="stylesheet" type="text/css" href="css/movieSearch.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+
 <body>
 
-    <div classs="container-fluid">
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="http://www.kennesaw.edu" target="_blank">
-                <p id="ksu">Kennesaw State University</<p></p></a>
-            </div>
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 1 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="milestone1.html">Milestone1 Part 1</a></li>
-                  <li><a href="milestone2.html">Milestone1 Part 2</a></li>
-                  <li><a href="milestone3.html">Milestone1 Part 3</a></li>
-                  <li><a href="milestone4.html">Milestone1 Part 4</a></li>
-                </ul>
+  <div classs="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="http://www.kennesaw.edu" target="_blank">
+            <p id="ksu">Kennesaw State University</<p></p>
+          </a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 1
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="milestone1.html">Milestone1 Part 1</a>
               </li>
-               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 2 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="ksu-milestone2.html">Book Search</a></li>
-                  <li><a href="ksu-milestone-part2.html">Milestone 2 Part 1</a></li>
-               
-                </ul>
+              <li>
+                <a href="milestone2.html">Milestone1 Part 2</a>
               </li>
-              <li><a href="milestone3part2.html">Milestone 3</a></li>
-              <li><a href="ksu-milestone3.html">Milestone 4</a></li>
-              <li><a href="termproject.html">Term Project</a></li>
-              <li><a href="others.html">Other Project</a></li>
+              <li>
+                <a href="milestone3.html">Milestone1 Part 3</a>
+              </li>
+              <li>
+                <a href="milestone4.html">Milestone1 Part 4</a>
               </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <a href="../resume/Resume_prai.pdf">
-              <button type="button" class="btn btn-primary" id="resumeId">
-                  <i class="fa fa-hand-peace-o" aria-hidden="true">
-                Download Resume</i></button></a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 2
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="ksu-milestone2.html">Book Search</a>
+              </li>
+              <li>
+                <a href="ksu-milestone-part2.html">Milestone 2 Part 1</a>
+              </li>
+
             </ul>
-          </div>
-        </nav>
+          </li>
+          <li>
+            <a href="milestone3part2.html">Milestone 3</a>
+          </li>
+          <li>
+            <a href="ksu-milestone3.html">Milestone 4</a>
+          </li>
+          <li>
+            <a href="termproject.html">Term Project</a>
+          </li>
+          <li>
+            <a href="others.html">Other Project</a>
+          </li>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <a href="../resume/Resume_prai.pdf">
+            <button type="button" class="btn btn-primary" id="resumeId">
+              <i class="fa fa-hand-peace-o" aria-hidden="true">
+                Download Resume</i>
+            </button>
+          </a>
+        </ul>
       </div>
+    </nav>
+  </div>
 
   <div class="container-fluid  div-header">
-			<!--Main menu with search bar  -->
-      <div class="row flexbox-container">
-        <h2 id="movie-col">Movie Search Engine</h2>
+    <!--Main menu with search bar  -->
+    <div class="row flexbox-container">
+      <h2 id="movie-col">Movie Search Engine</h2>
 
       <!-- <div class="col-md-12"> -->
-  				<div id="moveSearchContainer" class="flexbox">	
-  													<!--Search buttons -->
-                            <div class="btn-toolbar" role="toolbar">
-                            <div class="btn-group mr-2" role="group" aria-label="group one">
-        													<button type="button" class='btn btn-primary bt' onclick='gridView()'>Grid View</button>
-        													<button type="button" class='btn btn-primary bt' onclick='listView()'>List View</button>
-        													<button type="button" class='btn btn-primary bt' onclick='javascript:requestPopularMovies()'>
-                                  Popular Movie</button>
-        													<button type="button" class='btn btn-primary bt' onclick='sortResultsByDate()'>Sort by Release Date</button>;
-        													<button type="button" class='btn btn-primary bt' onclick='hideResults()'>Reset</button>
-                              </div>
-                              </div>
-
-                                
-                                    <input class="form-control" type="text" id="movieSearchBox" placeholder="Input movie name"/>
-                           
-                              <div class="btn-group mr-2" role="group" aria-label="basic">
-            											<button type="button" class="btn btn-primary" id="searchButton" onclick="searchForMovies()">Search</button>
-                                  </div>
-                              <div class="btn-group mr-2" id="page-number" role="group" aria-label="basic">
-            											<button type="button" class="btn btn-primary" id="Page1Results" onclick="Page1()">1</button> 
-            											<button type="button" class="btn btn-primary" id="Page2Results" onclick="Page2()">2</button>
-            											<button type="button" class="btn btn-primary" id="Page3Results" onclick="Page3()">3</button>
-                                  <!-- <button type="button" class="btn btn-primary" id="searchButton" onclick="Page3()">Search</button> -->
-  										    	 </div> 
-
-             </div>
-          <div class="col-md-4 header-img">
-                 <img id ="header-img" class="img-responsive" src="images/movielogo.jpg" alt="Smiley face" style="float:left;width:150px;height:150px;">
+      <div id="moveSearchContainer" class="flexbox">
+        <!--Search buttons -->
+        <div class="btn-toolbar" role="toolbar">
+          <div class="btn-group mr-2" role="group" aria-label="group one">
+            <button type="button" class='btn btn-primary bt' onclick='gridView()'>Grid View</button>
+            <button type="button" class='btn btn-primary bt' onclick='listView()'>List View</button>
+            <button type="button" class='btn btn-primary bt' onclick='javascript:requestPopularMovies()'>
+              Popular Movie</button>
+            <button type="button" class='btn btn-primary bt' onclick='sortResultsByDate()'>Sort by Release Date</button>;
+            <button type="button" class='btn btn-primary bt' onclick='hideResults()'>Reset</button>
+          </div>
         </div>
-                         
-					</div>
-  
-     
-      </div>								
+
+
+        <input class="form-control" type="text" id="movieSearchBox" placeholder="Input movie name" />
+
+        <div class="btn-group mr-2" role="group" aria-label="basic">
+          <button type="button" class="btn btn-primary" id="searchButton" onclick="searchForMovies()">Search</button>
+        </div>
+        <div class="btn-group mr-2" id="page-number" role="group" aria-label="basic">
+          <button type="button" class="btn btn-primary" id="Page1Results" onclick="Page1()">1</button>
+          <button type="button" class="btn btn-primary" id="Page2Results" onclick="Page2()">2</button>
+          <button type="button" class="btn btn-primary" id="Page3Results" onclick="Page3()">3</button>
+          <!-- <button type="button" class="btn btn-primary" id="searchButton" onclick="Page3()">Search</button> -->
+        </div>
+
+      </div>
+      <div class="col-md-4 header-img">
+        <img id="header-img" class="img-responsive" src="images/movielogo.jpg" alt="Smiley face" style="float:left;width:150px;height:150px;">
+      </div>
+
+    </div>
+
+
   </div>
-	<a name="topOfPage" style="text-decoration:none;color: inherit"/>
+  </div>
+  <a name="topOfPage" style="text-decoration:none;color: inherit" />
   <div id="topContainer1">
-				<div id="popularMoviesContainer"></div>			
-								<div id="buttonAlign">
-    								<div id="displayResult" class="resultsHover"></div>
-    								<div id="profit"></div>
-                </div>
-<script>
-//  API key and  other variables declared 
-	const key = 'c1f2244dfc243c17b76897f58bfd4629';
-	const resultsContainer = document.getElementById('displayResult');
-	const searchContainer = document.getElementById('moveSearchContainer');
-	const movieSearchBox = document.getElementById('movieSearchBox');
-	const popularContainer = document.getElementById('popularMovies');
-	let resultsIndex = 0, sortIndex = 0;
-	let searchResults, queryValue, castContainer, cast;
-	var resultsBoxName = 'resultsBoxList';
-	var apiURL, sortURL;
-	// Search and display movies
-	function searchForMovies() {
-  // AJAX request setting
-  queryValue = movieSearchBox.value;
-  let encodedQueryValue = encodeURI(queryValue);
-  //API key query 
-  let url = `http://api.themoviedb.org/3/search/movie?api_key=${key}&query=${encodedQueryValue}&page=1`;
-	apiURL = url;
-  // AJAX request to search for movies by title
-  let request = new XMLHttpRequest();
-  request.open('GET', url);  
-  request.onreadystatechange = function() {
-    if (request.readyState === 4) {
-	  // Format page
-      preFormatResults('resultsList'); 
-      searchResults = JSON.parse(request.responseText).results;         
-      resultsContainer.innerHTML = `<h3> ${searchResults.length} found</h3><br>`;
-	  // Dispaly search results
-     searchResults.forEach(showQueryResult);                       
-      console.log('/search/movie parsed response: ', JSON.parse(request.responseText)); 
-    }
-  };  
-  request.send();
-}
-movieSearchBox.addEventListener('keyup', function(event) {
-  if (event.key === 'Enter') searchForMovies();
-});
-function preFormatResults(option) {
-  if (option === 'resultsList') {
-    resultsContainer.style.display = 'flex';
-    resultsContainer.style.backgroundColor = 'white';
-    resultsIndex = 0;
-    sortIndex = 0;
-    searchResults = undefined;
-    castContainer = undefined;
-  }
-  else if (option === 'movieData') {
-    resultsContainer.innerHTML = "";
-    resultsContainer.style.backgroundColor = 'gray';
-  }
-}
-function sortResultsByDate() {
-  if (sortIndex % 2 === 0) {
-    searchResults.sort((a, b) => {
-      let releaseA = Number(a.release_date.replace(/-/g, ''));
-      let releaseB = Number(b.release_date.replace(/-/g, ''));
-      return releaseB - releaseA;
-    });
-  }
-  else {
-    searchResults.sort((a, b) => {
-      let releaseA = Number(a.release_date.replace(/-/g, ''));
-      let releaseB = Number(b.release_date.replace(/-/g, ''));
-      return releaseA - releaseB;
-    });
-  }
-  resultsContainer.innerHTML = `<h3>${searchResults.length} found</h3><br/>`;
-  searchResults.forEach(showQueryResult); 
-  sortIndex++;
-}
-objArray.sort(function(a, b) {
-    var textA = a.DepartmentName.toUpperCase();
-    var textB = b.DepartmentName.toUpperCase();
-    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-});
-// Displays summary data for a movie search result
-function showQueryResult(result) {
-  let title = result.title;
-  let id = result.id;
-  let releaseDate = `<span class='date'>(${result.release_date.slice(0,4)})</span>` || `<span class='date'>(unavailable)</span>`;
-  //let resultDiv = document.createElement('div');
-  let colorClass = (resultsIndex % 2 === 0 ) ? 'bc-light-gray' : 'bc-light-gray2';
-  resultsContainer.innerHTML += `<div id="movieResult${resultsIndex}" class='${resultsBoxName} ${colorClass}' onclick='requestMovieData(${id})'>${title} ${releaseDate}</div>`;
-  //resultsContainer.appendChild(resultDiv);
+    <div id="popularMoviesContainer"></div>
+    <div id="buttonAlign">
+      <div id="displayResult" class="resultsHover"></div>
+      <div id="profit"></div>
+    </div>
+    <script>
+      //  API key and  other variables declared 
+      const key = 'c1f2244dfc243c17b76897f58bfd4629';
+      const resultsContainer = document.getElementById('displayResult');
+      const searchContainer = document.getElementById('moveSearchContainer');
+      const movieSearchBox = document.getElementById('movieSearchBox');
+      const popularContainer = document.getElementById('popularMovies');
+      let resultsIndex = 0, sortIndex = 0;
+      let searchResults, queryValue, castContainer, cast;
+      var resultsBoxName = 'resultsBoxList';
+      var apiURL, sortURL;
+      // Search and display movies
+      function searchForMovies() {
+        // AJAX request setting
+        queryValue = movieSearchBox.value;
+        let encodedQueryValue = encodeURI(queryValue);
+        //API key query 
+        let url = `http://api.themoviedb.org/3/search/movie?api_key=${key}&query=${encodedQueryValue}&page=1`;
+        apiURL = url;
+        // AJAX request to search for movies by title
+        let request = new XMLHttpRequest();
+        request.open('GET', url);
+        request.onreadystatechange = function () {
+          if (request.readyState === 4) {
+            // Format page
+            preFormatResults('resultsList');
+            searchResults = JSON.parse(request.responseText).results;
+            resultsContainer.innerHTML = `<h3> ${searchResults.length} found</h3><br>`;
+            // Dispaly search results
+            searchResults.forEach(showQueryResult);
+            console.log('/search/movie parsed response: ', JSON.parse(request.responseText));
+          }
+        };
+        request.send();
+      }
 
-  resultsIndex++;
-}
+      movieSearchBox.addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') searchForMovies();
+      });
+      function preFormatResults(option) {
+        if (option === 'resultsList') {
+          resultsContainer.style.display = 'flex';
+          resultsContainer.style.backgroundColor = 'white';
+          resultsIndex = 0;
+          sortIndex = 0;
+          searchResults = undefined;
+          castContainer = undefined;
+        }
+        else if (option === 'movieData') {
+          resultsContainer.innerHTML = "";
+          resultsContainer.style.backgroundColor = 'gray';
+        }
+      }
+      function sortResultsByDate() {
+        if (sortIndex % 2 === 0) {
+          searchResults.sort((a, b) => {
+            let releaseA = Number(a.release_date.replace(/-/g, ''));
+            let releaseB = Number(b.release_date.replace(/-/g, ''));
+            return releaseB - releaseA;
+          });
+        }
+        else {
+          searchResults.sort((a, b) => {
+            let releaseA = Number(a.release_date.replace(/-/g, ''));
+            let releaseB = Number(b.release_date.replace(/-/g, ''));
+            return releaseA - releaseB;
+          });
+        }
+        resultsContainer.innerHTML = `<h3>${searchResults.length} found</h3><br/>`;
+        searchResults.forEach(showQueryResult);
+        sortIndex++;
+      }
+      objArray.sort(function (a, b) {
+        var textA = a.DepartmentName.toUpperCase();
+        var textB = b.DepartmentName.toUpperCase();
+        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+      });
+      // Displays summary data for a movie search result
+      function showQueryResult(result) {
+        let title = result.title;
+        let id = result.id;
+        let releaseDate = `<span class='date'>(${result.release_date.slice(0, 4)})</span>` || `<span class='date'>(unavailable)</span>`;
+        //let resultDiv = document.createElement('div');
+        let colorClass = (resultsIndex % 2 === 0) ? 'bc-light-gray' : 'bc-light-gray2';
+        resultsContainer.innerHTML += `<div id="movieResult${resultsIndex}" class='${resultsBoxName} ${colorClass}' onclick='requestMovieData(${id})'>${title} ${releaseDate}</div>`;
+        //resultsContainer.appendChild(resultDiv);
 
-// View detailed data for a specified movie
-function requestMovieData(id) {
-  let movieData;
-  let url = `http://api.themoviedb.org/3/movie/${id}?api_key=${key}&append_to_response=credits`;
+        resultsIndex++;
+      }
 
-  // AJAX request to retrieve movie data
-  let request = new XMLHttpRequest();  
-  request.open('GET', url);  
+      // View detailed data for a specified movie
+      function requestMovieData(id) {
+        let movieData;
+        let url = `http://api.themoviedb.org/3/movie/${id}?api_key=${key}&append_to_response=credits`;
 
-  request.onreadystatechange = function() {
-    if (request.readyState === 4) {
-      preFormatResults('movieData');
-      displayMovieData(request);
-    }
-  };
+        // AJAX request to retrieve movie data
+        let request = new XMLHttpRequest();
+        request.open('GET', url);
 
-  request.send();
-}
+        request.onreadystatechange = function () {
+          if (request.readyState === 4) {
+            preFormatResults('movieData');
+            displayMovieData(request);
+          }
+        };
 
-//=======================================================================================
-// Display detailed data for a clicked on movie
-function displayMovieData(request){
-  movieData = JSON.parse(request.responseText);
-  console.log('/movie/id parsed response: ', movieData); 
-  let title = movieData.title || 'No title available';
-  let overview = movieData.overview || 'No overview available.';
-  let posterPath = `http://image.tmdb.org/t/p/w500${movieData.poster_path}`;
-  let releaseYear = movieData.release_date ? `(${movieData.release_date.slice(0,4)})` : 'No release date available';
-  let rating = movieData.vote_average ? `${movieData.vote_average} / 10` : 'No rating available';
-  let runtime = movieData.runtime ? `${movieData.runtime} min` : 'No runtime available.';
-  let homepageURL = movieData.homepage || '';
-  let directors = movieData.credits.crew.filter( person => person.job === 'Director' );
-  cast = movieData.credits.cast;
+        request.send();
+      }
 
-  resultsContainer.innerHTML =  movieData.poster_path ? `<img src='${posterPath}'>` : '';
-  
-  resultsContainer.innerHTML += `<h1>${title}</h1>`
-                              + `<span class='release-year'>${releaseYear}</span>`
-                              + `<div id='rating'>${rating}</div><br><br>`
-                              + `<span>${overview}</span><br><br><br>`
-                              + `<span class='fw-bold'>Runtime:</span> ${runtime}<br>`
-                              + `<span class='fw-bold'>Homepage:</span> `;
-  resultsContainer.innerHTML += (homepageURL !== '') ? `<a href='${homepageURL}'>${homepageURL}</a>
+      //=======================================================================================
+      // Display detailed data for a clicked on movie
+      function displayMovieData(request) {
+        movieData = JSON.parse(request.responseText);
+        console.log('/movie/id parsed response: ', movieData);
+        let title = movieData.title || 'No title available';
+        let overview = movieData.overview || 'No overview available.';
+        let posterPath = `http://image.tmdb.org/t/p/w500${movieData.poster_path}`;
+        let releaseYear = movieData.release_date ? `(${movieData.release_date.slice(0, 4)})` : 'No release date available';
+        let rating = movieData.vote_average ? `${movieData.vote_average} / 10` : 'No rating available';
+        let runtime = movieData.runtime ? `${movieData.runtime} min` : 'No runtime available.';
+        let homepageURL = movieData.homepage || '';
+        let directors = movieData.credits.crew.filter(person => person.job === 'Director');
+        cast = movieData.credits.cast;
+
+        resultsContainer.innerHTML = movieData.poster_path ? `<img src='${posterPath}'>` : '';
+
+        resultsContainer.innerHTML += `<h1>${title}</h1>`
+          + `<span class='release-year'>${releaseYear}</span>`
+          + `<div id='rating'>${rating}</div><br><br>`
+          + `<span>${overview}</span><br><br><br>`
+          + `<span class='fw-bold'>Runtime:</span> ${runtime}<br>`
+          + `<span class='fw-bold'>Homepage:</span> `;
+        resultsContainer.innerHTML += (homepageURL !== '') ? `<a href='${homepageURL}'>${homepageURL}</a>
   <br>` : 'No homepage available.<br>';
 
-  appendDirectorInfo(directors);
-  appendCastInfo('short'); 
-}
-function appendDirectorInfo(directors) {
-  // Append director info
-  resultsContainer.innerHTML += (directors.length > 1) ? `<span class='fw-bold'>Directors:</span> ` : `<span class='fw-bold'>Director:</span> `;
-  for (let i = 0; i < directors.length; i++){
-    resultsContainer.innerHTML += 
-	`<span class='pseudolink' onclick="requestCastInfo(${directors[i].id})"><a href="#toCastDetails" style="text-decoration:none;color: inherit">${directors[i].name}</a></span>`;
-    if ( i < directors.length - 1) resultsContainer.innerHTML += ', ';
-  }
-  resultsContainer.innerHTML += '<br>';
-}
-function appendCastInfo(length) {
-  if (castContainer) {
-    castContainer = resultsContainer.removeChild(castContainer);
-  }
-  castContainer = document.createElement('div');
-  castContainer.id = 'castContainer';
-  castContainer.innerHTML += `<span class='fw-bold'>Cast:</span><br>`;
-  
-  if (length === 'short') {
-    let totalMembers = (cast.length < 10) ? cast.length : 10;
-    for (let i = 0; i < totalMembers; i++){
-      castContainer.innerHTML += 
-	  `<span class='pseudolink' onclick="requestCastInfo(${cast[i].id})"><a href="#toCastDetails" style="text-decoration:none;color: inherit">${cast[i].name}</a></span>:  ${cast[i].character}<br>`;
-	  
-    }
-	
-    // Add button to show all cast members, if necessary
-    if (cast.length > 10) {
-      castContainer.innerHTML += `<br><button onclick="appendCastInfo('long')">More...</button><br>`;
-	}
-	 castContainer.innerHTML += `<br><button id="searchButton" onclick="searchForMovies();document.getElementById('btnHide').click()">Close</button>`;
-  } 
-  else if (length === 'long') {
-    for (let i = 0; i < cast.length; i++){
-      castContainer.innerHTML += 
-	  `<span class='pseudolink' onclick="requestCastInfo(${cast[i].id})"><a href="#toCastDetails" style="text-decoration:none;color: inherit">${cast[i].name}</a></span>:  ${cast[i].character}<br>`;
-	  
-    }
-    castContainer.innerHTML += `<br><button onclick="appendCastInfo('short')">Less...</button><br>`;
-	castContainer.innerHTML += `<button id="searchButton"onclick="searchForMovies();document.getElementById('btnHide').click()">Close</button>`;
-	
-  }//
-  
- // =============================================================
+        appendDirectorInfo(directors);
+        appendCastInfo('short');
+      }
+      function appendDirectorInfo(directors) {
+        // Append director info
+        resultsContainer.innerHTML += (directors.length > 1) ? `<span class='fw-bold'>Directors:</span> ` : `<span class='fw-bold'>Director:</span> `;
+        for (let i = 0; i < directors.length; i++) {
+          resultsContainer.innerHTML +=
+            `<span class='pseudolink' onclick="requestCastInfo(${directors[i].id})"><a href="#toCastDetails" style="text-decoration:none;color: inherit">${directors[i].name}</a></span>`;
+          if (i < directors.length - 1) resultsContainer.innerHTML += ', ';
+        }
+        resultsContainer.innerHTML += '<br>';
+      }
+      function appendCastInfo(length) {
+        if (castContainer) {
+          castContainer = resultsContainer.removeChild(castContainer);
+        }
+        castContainer = document.createElement('div');
+        castContainer.id = 'castContainer';
+        castContainer.innerHTML += `<span class='fw-bold'>Cast:</span><br>`;
 
-  resultsContainer.appendChild(castContainer);
-}
-function hideResults() {
-  resultsContainer.style.display = 'none';
-  movieSearchBox.value = '';
-}
+        if (length === 'short') {
+          let totalMembers = (cast.length < 10) ? cast.length : 10;
+          for (let i = 0; i < totalMembers; i++) {
+            castContainer.innerHTML +=
+              `<span class='pseudolink' onclick="requestCastInfo(${cast[i].id})"><a href="#toCastDetails" style="text-decoration:none;color: inherit">${cast[i].name}</a></span>:  ${cast[i].character}<br>`;
+
+          }
+
+          // Add button to show all cast members, if necessary
+          if (cast.length > 10) {
+            castContainer.innerHTML += `<br><button onclick="appendCastInfo('long')">More...</button><br>`;
+          }
+          castContainer.innerHTML += `<br><button id="searchButton" onclick="searchForMovies();document.getElementById('btnHide').click()">Close</button>`;
+        }
+        else if (length === 'long') {
+          for (let i = 0; i < cast.length; i++) {
+            castContainer.innerHTML +=
+              `<span class='pseudolink' onclick="requestCastInfo(${cast[i].id})"><a href="#toCastDetails" style="text-decoration:none;color: inherit">${cast[i].name}</a></span>:  ${cast[i].character}<br>`;
+
+          }
+          castContainer.innerHTML += `<br><button onclick="appendCastInfo('short')">Less...</button><br>`;
+          castContainer.innerHTML += `<button id="searchButton"onclick="searchForMovies();document.getElementById('btnHide').click()">Close</button>`;
+
+        }//
+
+        // =============================================================
+
+        resultsContainer.appendChild(castContainer);
+      }
+      function hideResults() {
+        resultsContainer.style.display = 'none';
+        movieSearchBox.value = '';
+      }
 
 
-//VIEWS NUMBER OF SEARCH FROM HERE 
-//==================================================================
-function Page1() {
-  
-  // Page search 1 AJAX request
-  queryValue = movieSearchBox.value;
-  let encodedQueryValue = encodeURI(queryValue);
-  //url with API key && query value
-  let url = `http://api.themoviedb.org/3/search/movie?api_key=${key}&query=${encodedQueryValue}&page=1`;
-  apiURL = url;
-  // AJAX request to search for movies by title
-  let request = new XMLHttpRequest();
-  request.open('GET', url);  
+      //VIEWS NUMBER OF SEARCH FROM HERE 
+      //==================================================================
+      function Page1() {
 
-  request.onreadystatechange = function() {
-    if (request.readyState === 4) {
-	  // Format page
-      preFormatResults('resultsList'); 
-	  // Gather up JSON search results
-      searchResults = JSON.parse(request.responseText).results;         
-      resultsContainer.innerHTML = `<h3>${searchResults.length} found</h3><br/>`;
-	   
-	  // Dispaly search results
-      searchResults.forEach(showQueryResult);                           
-		
-      console.log('/search/movie parsed response: ', JSON.parse(request.responseText));
-    }
-  };  
+        // Page search 1 AJAX request
+        queryValue = movieSearchBox.value;
+        let encodedQueryValue = encodeURI(queryValue);
+        //url with API key && query value
+        let url = `http://api.themoviedb.org/3/search/movie?api_key=${key}&query=${encodedQueryValue}&page=1`;
+        apiURL = url;
+        // AJAX request to search for movies by title
+        let request = new XMLHttpRequest();
+        request.open('GET', url);
 
-  request.send();
-}
+        request.onreadystatechange = function () {
+          if (request.readyState === 4) {
+            // Format page
+            preFormatResults('resultsList');
+            // Gather up JSON search results
+            searchResults = JSON.parse(request.responseText).results;
+            resultsContainer.innerHTML = `<h3>${searchResults.length} found</h3><br/>`;
 
-function Page2() {
-  
-  // Page search 2 AJAX request
-  queryValue = movieSearchBox.value;
-  let encodedQueryValue = encodeURI(queryValue);
-  //url with API key && query value
-  let url = `http://api.themoviedb.org/3/search/movie?api_key=${key}&query=${encodedQueryValue}&page=2`;
-	apiURL = url;
-  // AJAX request to search for movies by title
-  let request = new XMLHttpRequest();
-  request.open('GET', url);  
+            // Dispaly search results
+            searchResults.forEach(showQueryResult);
 
-  request.onreadystatechange = function() {
-    if (request.readyState === 4) {
-	  // Format page
-      preFormatResults('resultsList'); 
-	  // Gather up JSON search results
-      searchResults = JSON.parse(request.responseText).results;         
-      resultsContainer.innerHTML = `<h3>${searchResults.length} found </h3><br/>`;
-   
-	  // Dispaly search results
-      searchResults.forEach(showQueryResult);                           
-		
-      console.log('/search/movie parsed response: ', JSON.parse(request.responseText));
-    }
-  };  
+            console.log('/search/movie parsed response: ', JSON.parse(request.responseText));
+          }
+        };
 
-  request.send();
-}
-function Page3() {
-  // Page search 3 AJAX request
-  queryValue = movieSearchBox.value;
-  let encodedQueryValue = encodeURI(queryValue);
-  //url with API key && query value
-  let url = `http://api.themoviedb.org/3/search/movie?api_key=${key}&query=${encodedQueryValue}&page=3`;
-	apiURL = url;
-  // AJAX request to search for movies by title
-  let request = new XMLHttpRequest();
-  request.open('GET', url);  
+        request.send();
+      }
+      //PAGE 2
+      function Page2() {
+        // Page search 2 AJAX request
+        queryValue = movieSearchBox.value;
+        let encodedQueryValue = encodeURI(queryValue);
+        //url with API key && query value
+        let url = `http://api.themoviedb.org/3/search/movie?api_key=${key}&query=${encodedQueryValue}&page=2`;
+        apiURL = url;
+        // AJAX request to search for movies by title
+        let request = new XMLHttpRequest();
+        request.open('GET', url);
 
-  request.onreadystatechange = function() {
-    if (request.readyState === 4) {
-	  // Format page
-      preFormatResults('resultsList'); 
-	  // Gather up JSON search results
-      searchResults = JSON.parse(request.responseText).results;         
-      resultsContainer.innerHTML = `<h3>${searchResults.length} found </h3><br/>`;
-	   
-	  // Dispaly search results
-      searchResults.forEach(showQueryResult);                           	
-      console.log('/search/movie parsed response: ', JSON.parse(request.responseText));
-    }
-  };  
+        request.onreadystatechange = function () {
+          if (request.readyState === 4) {
+            // Format page
+            preFormatResults('resultsList');
+            // Gather up JSON search results
+            searchResults = JSON.parse(request.responseText).results;
+            resultsContainer.innerHTML = `<h3>${searchResults.length} found </h3><br/>`;
 
-  request.send();
-}
+            // Dispaly search results
+            searchResults.forEach(showQueryResult);
 
-function requestCastInfo(id){
-	 $.getJSON("https://api.themoviedb.org/3/person/"+id+"?api_key="+key+"&language=en-US", function (jsonData)
-         {
-            $("#profit").html("");
-			var template = $('#castDetailsTemplate').html();
-			var html = Mustache.render(template, jsonData);
-			$("#profit").html(html);
-			$("#profit").fadeIn();
-					 
-			$("#btnHide").click(function ()
-			{
-				$("#profit").fadeOut();
-			});
-         });
-}
+            console.log('/search/movie parsed response: ', JSON.parse(request.responseText));
+          }
+        };
 
-//MY POPULAR MOVIES
-function requestPopularMovies(){
-	$.getJSON("https://api.themoviedb.org/3/discover/movie?api_key="+key+"&sort_by = popularity.desc", function (jsonData){
-		
-			$("#popularMoviesContainer").html("");
-			var template = $('#popularMovies').html();
-			var html = Mustache.render(template, jsonData);
-			$("#popularMoviesContainer").html(html);
-			$("#popularMoviesContainer").fadeIn();
-	});
-}
+        request.send();
+      }
 
-// LIST VIEW BUTTON
-function listView(){
-	var i = 0;
-	$("#displayResult > div").each(function(){
-		let colorClass = (i % 2 === 0 ) ? 'bc-light-gray' : 'bc-light-gray2';
-		document.getElementById("movieResult"+i+"").className = "resultsBoxList "+colorClass+"";
-		i++;
-	});
-}
-//GRID VIEW BUTTON
-function gridView(){
-	var i = 0;
-	$("#displayResult > div").each(function(){
-		let colorClass = (i % 2 === 0 ) ? 'bc-light-gray' : 'bc-light-gray2';
-		document.getElementById("movieResult"+i+"").className = "resultsBoxGrid "+colorClass+"";
-		i++;
-	});
-}
-function testUrl(){
-	sortURL = apiURL+"&sort_by=release_date.desc";
-	searchResults.forEach(showQueryResult);	
-}
+      //PAGE 3
+      function Page3() {
+        // Page search 3 AJAX request
+        queryValue = movieSearchBox.value;
+        let encodedQueryValue = encodeURI(queryValue);
+        //url with API key && query value
+        let url = `http://api.themoviedb.org/3/search/movie?api_key=${key}&query=${encodedQueryValue}&page=3`;
+        apiURL = url;
+        // AJAX request to search for movies by title
+        let request = new XMLHttpRequest();
+        request.open('GET', url);
 
-</script>
+        request.onreadystatechange = function () {
+          if (request.readyState === 4) {
+            // Format page
+            preFormatResults('resultsList');
+            // Gather up JSON search results
+            searchResults = JSON.parse(request.responseText).results;
+            resultsContainer.innerHTML = `<h3>${searchResults.length} found </h3><br/>`;
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
-<!--Diplays popular movies-->
-<script id="popularMovies" type="text/template">
+            // Dispaly search results
+            searchResults.forEach(showQueryResult);
+            console.log('/search/movie parsed response: ', JSON.parse(request.responseText));
+          }
+        };
+
+        request.send();
+      }
+
+      function requestCastInfo(id) {
+        $.getJSON("https://api.themoviedb.org/3/person/" + id + "?api_key=" + key + "&language=en-US", function (jsonData) {
+          $("#profit").html("");
+          var template = $('#castDetailsTemplate').html();
+          var html = Mustache.render(template, jsonData);
+          $("#profit").html(html);
+          $("#profit").fadeIn();
+
+          $("#btnHide").click(function () {
+            $("#profit").fadeOut();
+          });
+        });
+      }
+
+      //MY POPULAR MOVIES
+      function requestPopularMovies() {
+        $.getJSON("https://api.themoviedb.org/3/discover/movie?api_key=" + key + "&sort_by = popularity.desc", function (jsonData) {
+
+          $("#popularMoviesContainer").html("");
+          var template = $('#popularMovies').html();
+          var html = Mustache.render(template, jsonData);
+          $("#popularMoviesContainer").html(html);
+          $("#popularMoviesContainer").fadeIn();
+        });
+      }
+
+      // LIST VIEW BUTTON
+      function listView() {
+        var i = 0;
+        $("#displayResult > div").each(function () {
+          let colorClass = (i % 2 === 0) ? 'bc-light-gray' : 'bc-light-gray2';
+          document.getElementById("movieResult" + i + "").className = "resultsBoxList " + colorClass + "";
+          i++;
+        });
+      }
+      //GRID VIEW BUTTON
+      function gridView() {
+        var i = 0;
+        $("#displayResult > div").each(function () {
+          let colorClass = (i % 2 === 0) ? 'bc-light-gray' : 'bc-light-gray2';
+          document.getElementById("movieResult" + i + "").className = "resultsBoxGrid " + colorClass + "";
+          i++;
+        });
+      }
+      function testUrl() {
+        sortURL = apiURL + "&sort_by=release_date.desc";
+        searchResults.forEach(showQueryResult);
+      }
+
+    </script>
+
+    <!--Diplays popular movies-->
+  <script id="popularMovies" type="text/template">
 
 	{{#results}}
 		<div id="Movie" onclick="requestMovieData({{id}});document.getElementById('data-container').style.display='block';document.getElementById('popularMoviesContainer').style.display='none'">
@@ -450,7 +480,7 @@ function testUrl(){
 </script>
 
 
-<script id="castDetailsTemplate" type="text/template">
+  <script id="castDetailsTemplate" type="text/template">
 	<div class='castMember'>
 		<div><a href="#topOfPage" style="text-decoration:none;color: inherit">
 		<input type="button" id="btnHide" value="Close" /></a></div>
@@ -461,10 +491,11 @@ function testUrl(){
 		
 	</div>
 </script>
-
-  <a name="toCastDetails" style="color: inherit"/>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <a name="toCastDetails" style="color: inherit" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
 </html>

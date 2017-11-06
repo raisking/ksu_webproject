@@ -43,8 +43,10 @@ a:link{
     font-size: 1.4em;
 }
 #navbar{
-    background-color: #413E3E;
-    padding: 5px;
+    background-color: #003366;
+    padding: 0;
+    margin-bottom: 100px;
+    
 }
 #resumeId{
     margin-top: 5px;
