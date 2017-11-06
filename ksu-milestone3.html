@@ -8,9 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/app.css">
-
-
-
 	<link rel="stylesheet" type="text/css" href="css/ksu-milestone3.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
 
@@ -81,7 +78,7 @@
 
 	<!-- Pulls data from google API library -->
 
-	<script type="text/javascript">
+	<script>
 			$(document).ready(function () {
 				$("#btnSearch").click(function () {
 					var url = "https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=0";
@@ -125,7 +122,7 @@
 			});
 
 			 
-		<!--Flex box display -- >
+		//<!--Flexbox display -->
 				function searchBooks(servicePoint) {
 					$("#flexbox").html("Searching ..." + "<img src='http://vignette1.wikia.nocookie.net/wikiality/images/7/70/ProgressBar.gif/revision/latest?cb=20070406024457'>");
 
@@ -176,7 +173,6 @@
 			}
 
 	</script>
-
 </head>
 
 <body>
