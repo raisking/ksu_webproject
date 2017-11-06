@@ -1,5 +1,5 @@
-
 <!DOCTYPE html>
+
 <head>
 	<title>Milestone 4</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -8,13 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/app.css">
-  
-  
-  
+
+
+
 	<link rel="stylesheet" type="text/css" href="css/ksu-milestone3.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
-	
-			<script id="maintop" type="text/template">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+
+	<script id="maintop" type="text/template">
 			<div class='title'><h1 class="oldEnglish">{{#volumeInfo}}{{title}}{{/volumeInfo}}</h1></div> 
 			<div class='subtitle'><h2><i>{{#volumeInfo}}{{subtitle}}{{/volumeInfo}}</i></h2></div>
 			<h3 class='author'>Author: {{#volumeInfo}}{{authors}}{{/volumeInfo}}</h3></div>
@@ -26,8 +26,8 @@
 			<div class='description'><b>Pages:</b> <i>{{#volumeInfo}}{{pageCount}}{{/volumeInfo}}</i></div>
 			<div class='description'><b>Average Rating:</b><i> {{#volumeInfo}}{{averageRating}}{{/volumeInfo}}</i></div>
 			</script>
-	
-			<script id="booklisttemplate" type="text/template">
+
+	<script id="booklisttemplate" type="text/template">
 				{{#items}}
 				
 				<div class='boxitem' id="{{id}}">
@@ -36,8 +36,8 @@
 				</div>
 				{{/items}}
 			</script>
-				
-			<script id="maintop1" type="text/template">
+
+	<script id="maintop1" type="text/template">
 				{{#items}}
 				<div class='boxitem2' id="{{id}}">
 					<img style="float:left;" src='{{#volumeInfo}}{{#imageLinks}}{{thumbnail}}{{/imageLinks}}{{/volumeInfo}}'  width=50 /> 
@@ -45,244 +45,267 @@
 				</div>
 				{{/items}}
 			</script>
-			
-		
 
-			<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-			<!-- This is the first display flex box -->
-			<script>
-			$(function(){
-				$("#btnGrid").click(function (){
-					$(".boxitem").css("width", "24%").css("height","200px");
-					$("#flexbox").attr("data-layout","Grid");
-				});
-				
-				$("#btnList").click(function (){
-					$(".boxitem").css("width", "99%").css("height","100px");
-					$("#flexbox").attr("data-layout","List");
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<!-- This is the first display flex box -->
+	<script>
+		$(function () {
+			$("#btnGrid").click(function () {
+				$(".boxitem").css("width", "24%").css("height", "200px");
+				$("#flexbox").attr("data-layout", "Grid");
+			});
+
+			$("#btnList").click(function () {
+				$(".boxitem").css("width", "99%").css("height", "100px");
+				$("#flexbox").attr("data-layout", "List");
+			});
+		});
+	</script>
+
+	<!-- This is the My public library display flex box -->
+	<script>
+		$(function () {
+			$("#btnGrid2").click(function () {
+				$(".boxitem2").css("width", "24%").css("height", "200px");
+				$("#box2").attr("data-layout", "Grid");
+			});
+
+			$("#btnList2").click(function () {
+				$(".boxitem2").css("width", "99%").css("height", "100px");
+				$("#box2").attr("data-layout", "List");
+			});
+		});        
+	</script>
+
+	<!-- Pulls data from google API library -->
+
+	<script type="text/javascript">
+			$(document).ready(function () {
+				$("#btnSearch").click(function () {
+					var url = "https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=0";
+					searchBooks(url);
 				});
 			});
-			</script>
 
-			<!-- This is the My public library display flex box -->  
-			<script>
-			$(function(){
-				$("#btnGrid2").click(function (){
-					$(".boxitem2").css("width", "24%").css("height","200px");
-					$("#box2").attr("data-layout","Grid");
+			$(document).ready(function () {
+				$("#a1").click(function () {
+					var url = "https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=0";
+					searchBooks(url);
 				});
-				
-				$("#btnList2").click(function (){
-					$(".boxitem2").css("width", "99%").css("height","100px");
-					$("#box2").attr("data-layout","List");
+			});
+
+			$(document).ready(function () {
+				$("#a2").click(function () {
+					var url = "https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=10";
+					searchBooks(url);
 				});
-			});        
-			</script>
-			
-			<!-- Pulls data from google API library -->
-			
-			<script type="text/javascript">
-			 $(document).ready(function ()
-			 {
-				 $("#btnSearch").click(function ()
-				 {
-					var url="https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=0";
+			});
+
+			$(document).ready(function () {
+				$("#a3").click(function () {
+					var url = "https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=20";
 					searchBooks(url);
-				 });
-			 });
-				
-			$(document).ready(function ()
-			 {
-				 $("#a1").click(function ()
-				 {
-					var url="https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=0";
+				});
+			});
+
+			$(document).ready(function () {
+				$("#a4").click(function () {
+					var url = "https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=30";
 					searchBooks(url);
-				 });
-			 });    
-				
-				 $(document).ready(function ()
-			 {
-				 $("#a2").click(function ()
-				 {
-					var url="https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=10";
+				});
+			});
+
+			$(document).ready(function () {
+				$("#a5").click(function () {
+					var url = "https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=40";
 					searchBooks(url);
-				 });
-			 });
-				
-					 $(document).ready(function ()
-			 {
-				 $("#a3").click(function ()
-				 {
-					var url="https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=20";
-					searchBooks(url);
-				 });
-			 });
-				
-					 $(document).ready(function ()
-			 {
-				 $("#a4").click(function ()
-				 {
-					var url="https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=30";
-					searchBooks(url);
-				 });
-			 });
-				
-					 $(document).ready(function ()
-			 {
-				 $("#a5").click(function ()
-				 {
-					var url="https://www.googleapis.com/books/v1/volumes?q=" + $("#searchTerm").val() + "&startIndex=40";
-					searchBooks(url);
-				 });
-			 });
+				});
+			});
 
 			 
-		<!-- Flex box display -->
-			 function searchBooks(servicePoint)
-		 {
-			 $("#flexbox").html("Searching ..."+"<img src='http://vignette1.wikia.nocookie.net/wikiality/images/7/70/ProgressBar.gif/revision/latest?cb=20070406024457'>");
-		   	
-			$.getJSON(servicePoint, function (jsonData)
-			 {
-				$("#flexbox").html("");
-				var template = $('#booklisttemplate').html();
-				var html = Mustache.render(template, jsonData);
-				$("#flexbox").html(html);
-				 $(".boxitem").on('click', function () 
-				 { 
-					$(".boxitem").css("background-color","");
-					$(this).css("background-color","#003366");
-					getBookDetails($(this).attr("id")); 
-				 });
-			 });
-		 }
-		 function getBookDetails(bookid)
-		 {
-			 $("#bookdetails").html("Working ..."+"<img style='content-align:center; margin:10px;' src='http://vignette1.wikia.nocookie.net/wikiality/images/7/70/ProgressBar.gif/revision/latest?cb=20070406024457'>");
-			 //we can use AJAX here because this service provider allows cross origin request
-			 $.getJSON("https://www.googleapis.com/books/v1/volumes/" + bookid, function (jsonData)
-			 {
-				$("#bookdetails").html("");
-				var template = $('#maintop').html();
-				var html = Mustache.render(template, jsonData);
-				$("#bookdetails").html(html);
-			 });
-		 } 
-			
-		$(document).ready(function ()
-		 {
-			 $("#box2").ready(function ()
-			 
-			 {
-			 // My public book shelves pulled from my google book
-				var url= "https://www.googleapis.com/books/v1/users/100896000280916211889/bookshelves/1001/volumes";  
-				googleLibraryLoad(url);
-			 });
-		 });
-			
-		function googleLibraryLoad(servicePoint)
-		{
-			$.getJSON(servicePoint, function (jsonData)
-			 {
-				$("#box2").html("");
-				var template = $('#maintop1').html();
-				var html = Mustache.render(template, jsonData);
-				$("#box2").html(html);
+		<!--Flex box display -- >
+				function searchBooks(servicePoint) {
+					$("#flexbox").html("Searching ..." + "<img src='http://vignette1.wikia.nocookie.net/wikiality/images/7/70/ProgressBar.gif/revision/latest?cb=20070406024457'>");
 
-				 $(".boxitem2").on('click', function () 
-				 { 
-					$(".boxitem2").css("background-color","");
-					$(this).css("background-color","#003366");
-					getBookDetails($(this).attr("id")); 
-				 });
-			 });
-		}
-        
-</script>    
+					$.getJSON(servicePoint, function (jsonData) {
+						$("#flexbox").html("");
+						var template = $('#booklisttemplate').html();
+						var html = Mustache.render(template, jsonData);
+						$("#flexbox").html(html);
+						$(".boxitem").on('click', function () {
+							$(".boxitem").css("background-color", "");
+							$(this).css("background-color", "#003366");
+							getBookDetails($(this).attr("id"));
+						});
+					});
+				}
+			function getBookDetails(bookid) {
+				$("#bookdetails").html("Working ..." + "<img style='content-align:center; margin:10px;' src='http://vignette1.wikia.nocookie.net/wikiality/images/7/70/ProgressBar.gif/revision/latest?cb=20070406024457'>");
+				//we can use AJAX here because this service provider allows cross origin request
+				$.getJSON("https://www.googleapis.com/books/v1/volumes/" + bookid, function (jsonData) {
+					$("#bookdetails").html("");
+					var template = $('#maintop').html();
+					var html = Mustache.render(template, jsonData);
+					$("#bookdetails").html(html);
+				});
+			}
+
+			$(document).ready(function () {
+				$("#box2").ready(function () {
+					// My public book shelves pulled from my google book
+					var url = "https://www.googleapis.com/books/v1/users/100896000280916211889/bookshelves/1001/volumes";
+					googleLibraryLoad(url);
+				});
+			});
+
+			function googleLibraryLoad(servicePoint) {
+				$.getJSON(servicePoint, function (jsonData) {
+					$("#box2").html("");
+					var template = $('#maintop1').html();
+					var html = Mustache.render(template, jsonData);
+					$("#box2").html(html);
+
+					$(".boxitem2").on('click', function () {
+						$(".boxitem2").css("background-color", "");
+						$(this).css("background-color", "#003366");
+						getBookDetails($(this).attr("id"));
+					});
+				});
+			}
+
+	</script>
 
 </head>
-		<body>
-				<div classs="container-fluid">
-						<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
-						  <div class="container-fluid">
-							<div class="navbar-header">
-							  <a class="navbar-brand" href="http://www.kennesaw.edu" target="_blank">
-								<p id="ksu">Kennesaw State University</<p></p></a>
-							</div>
-							<ul class="nav navbar-nav">
-							  <li class="active"><a href="index.html">Home</a></li>
-							  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 1 <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-								  <li><a href="milestone1.html">Milestone1 Part 1</a></li>
-								  <li><a href="milestone2.html">Milestone1 Part 2</a></li>
-								  <li><a href="milestone3.html">Milestone1 Part 3</a></li>
-								  <li><a href="milestone4.html">Milestone1 Part 4</a></li>
-								</ul>
-							  </li>
-							   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 2 <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="ksu-milestone2.html">Book Search</a></li>
-								  <li><a href="ksu-milestone-part2.html">Milestone 2 Part 1</a></li>
-							   
-								</ul>
-							  </li>
-							  <li><a href="milestone3part2.html">Milestone 3</a></li>
-							  <li><a href="ksu-milestone3.html">Milestone 4</a></li>
-							  <li><a href="termproject.html">Term Project</a></li>
-							  <li><a href="others.html">Other Project</a></li>
-							  </li>
-							</ul>
-							<ul class="nav navbar-nav navbar-right">
-								<a href="../resume/Resume_prai.pdf">
-							  <button type="button" class="btn btn-primary" id="resumeId">
-								  <i class="fa fa-hand-peace-o" aria-hidden="true">
-								Download Resume</i></button></a>
-							</ul>
-						  </div>
-						</nav>
-					  </div>
-			<div class="change">
-			<p>	<a href="javascript: void(0)" id='btnList'>List View</a> &nbsp;&nbsp;  
-				<a href="javascript: void(0)" id='btnGrid'>Grid View</a></p>
-			</div>
-				<!-- Prints out the result from Google API -->
-				<div id="flexbox" data-layout="List"></div> 
-				
-				<!-- Display the details of individual books on the side of the page -->
-				<div id="bookdetails"></div>
-				
-				<!-- Static header of the page | Page -->
-				<div class="header">
-					<h1>Milestone 4 </h1>
-					<input type="text" id="searchTerm" value="" />
-					<input type="button" id="btnSearch" value="Search" /><br><br>
-					<ul class="pageNo">
-						<li id="a1"><a href="#">1</a></li>
-						<li id="a2"><a href="#">2</a></li>
-						<li id="a3"><a href="#">3</a></li>
-						<li id="a4"><a href="#">4</a></li>
-						<li id="a5"><a href="#">5</a></li>
-					</ul>
-					<h1>Books Search Result</h1>
-			</div>    
-				
-			<h1>My Public Library</h1>
-				
-				<div class= "change1">
-					<a href="javascript: void(0)" id='btnList2'>List View</a> &nbsp;&nbsp; 
-					<a href="javascript: void(0)" id='btnGrid2'>Grid View</a>
+
+<body>
+	<div classs="container-fluid">
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="http://www.kennesaw.edu" target="_blank">
+						<p id="ksu">Kennesaw State University</<p></p>
+					</a>
 				</div>
-				
-			<div id="box2" data-layout="List">
-				<script>
-				for (i=0; i<8; i++)
-				{
-					document.write("<div class='boxitem2'><p style='content-align:center; margin-left:20px; margin-top:30px;'></p></div>");
-				}
-				</script>
-			</div>   
-			
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-		</body>   
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 1
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="milestone1.html">Milestone1 Part 1</a>
+							</li>
+							<li>
+								<a href="milestone2.html">Milestone1 Part 2</a>
+							</li>
+							<li>
+								<a href="milestone3.html">Milestone1 Part 3</a>
+							</li>
+							<li>
+								<a href="milestone4.html">Milestone1 Part 4</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 2
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="ksu-milestone2.html">Book Search</a>
+							</li>
+							<li>
+								<a href="ksu-milestone-part2.html">Milestone 2 Part 1</a>
+							</li>
+
+						</ul>
+					</li>
+					<li>
+						<a href="milestone3part2.html">Milestone 3</a>
+					</li>
+					<li>
+						<a href="ksu-milestone3.html">Milestone 4</a>
+					</li>
+					<li>
+						<a href="termproject.html">Term Project</a>
+					</li>
+					<li>
+						<a href="others.html">Other Project</a>
+					</li>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<a href="../resume/Resume_prai.pdf">
+						<button type="button" class="btn btn-primary" id="resumeId">
+							<i class="fa fa-hand-peace-o" aria-hidden="true">
+								Download Resume</i>
+						</button>
+					</a>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="change">
+		<p>
+			<a href="javascript: void(0)" id='btnList'>List View</a> &nbsp;&nbsp;
+			<a href="javascript: void(0)" id='btnGrid'>Grid View</a>
+		</p>
+	</div>
+	<!-- Prints out the result from Google API -->
+	<div id="flexbox" data-layout="List"></div>
+
+	<!-- Display the details of individual books on the side of the page -->
+	<div id="bookdetails"></div>
+
+	<!-- Static header of the page | Page -->
+	<div class="header">
+		<h1>Milestone 4 </h1>
+		<input type="text" id="searchTerm" value="" />
+		<input type="button" id="btnSearch" value="Search" />
+		<br>
+		<br>
+		<ul class="pageNo">
+			<li id="a1">
+				<a href="#">1</a>
+			</li>
+			<li id="a2">
+				<a href="#">2</a>
+			</li>
+			<li id="a3">
+				<a href="#">3</a>
+			</li>
+			<li id="a4">
+				<a href="#">4</a>
+			</li>
+			<li id="a5">
+				<a href="#">5</a>
+			</li>
+		</ul>
+		<h1>Books Search Result</h1>
+	</div>
+
+	<h1>My Public Library</h1>
+
+	<div class="change1">
+		<a href="javascript: void(0)" id='btnList2'>List View</a> &nbsp;&nbsp;
+		<a href="javascript: void(0)" id='btnGrid2'>Grid View</a>
+	</div>
+
+	<div id="box2" data-layout="List">
+		<script>
+			for (i = 0; i < 8; i++) {
+				document.write("<div class='boxitem2'><p style='content-align:center; margin-left:20px; margin-top:30px;'></p></div>");
+			}
+		</script>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
 </html>

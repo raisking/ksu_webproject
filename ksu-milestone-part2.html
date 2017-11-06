@@ -1,149 +1,117 @@
-
 <!DOCTYPE html>
-
-
-
 <html>
 
 <head>
-
-	<title>Bookshelf</title>
-     
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-         <link rel="stylesheet" type="text/css" href="css/app.css">
-       
-       
-       
-	 <link href="CSSM1P3.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-
-
+  <title>Bookshelf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/ksumilestone3.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
 </head>
-
-<script>
-
-    $(function () {
-
-
-
-        
-         var service_point1 = "https://www.googleapis.com/books/v1/users/102270121096513839701/bookshelves/1001/";
-        var service_point2 = "https://www.googleapis.com/books/v1/users/102270121096513839701/bookshelves/1001/volumes";
-
-
-
-        $.getJSON(service_point2, function (json2) {
-
-
-
-            //$("#shelf").text(json.title); 
-
-
-
-            resultHTML = "";
-
-            for (i in json2.items) {
-
-                var booktitle = json2.items[i].volumeInfo.title;
-
-                var bookid = json2.items[i].id;
-
-                var cover = json2.items[i].volumeInfo.imageLinks.smallThumbnail;
-                var url = json2.items[i].volumeInfo.infoLink;
-
-
-
-                resultHTML += "<div class='bookdiv'>";
-
-                resultHTML += "<img src='" + cover + "' style='float: left' />";
-
-                resultHTML += "<a href="  + url + "'>" + booktitle + "</a>";
-
-                resultHTML += "</div>";
-
-            }
-
-            $("#results").html(resultHTML);
-
-            $(".bookdiv").css("width", "300px");
-
-        });
-
-    });
-
-</script>
-
 <body>
-
-
-    <div classs="container-fluid">
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="http://www.kennesaw.edu" target="_blank">
-                <p id="ksu">Kennesaw State University</<p></p></a>
-            </div>
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 1 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="milestone1.html">Milestone1 Part 1</a></li>
-                  <li><a href="milestone2.html">Milestone1 Part 2</a></li>
-                  <li><a href="milestone3.html">Milestone1 Part 3</a></li>
-                  <li><a href="milestone4.html">Milestone1 Part 4</a></li>
-                </ul>
+  <div classs="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="http://www.kennesaw.edu" target="_blank">
+            <p id="ksu">Kennesaw State University</<p></p>
+          </a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 1
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="milestone1.html">Milestone1 Part 1</a>
               </li>
-               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 2 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="ksu-milestone2.html">Book Search</a></li>
-                  <li><a href="ksu-milestone-part2.html">Milestone 2 Part 1</a></li>
-               
-                </ul>
+              <li>
+                <a href="milestone2.html">Milestone1 Part 2</a>
               </li>
-              <li><a href="milestone3part2.html">Milestone 3</a></li>
-              <li><a href="ksu-milestone3.html">Milestone 4</a></li>
-              <li><a href="termproject.html">Term Project</a></li>
-              <li><a href="others.html">Other Project</a></li>
+              <li>
+                <a href="milestone3.html">Milestone1 Part 3</a>
+              </li>
+              <li>
+                <a href="milestone4.html">Milestone1 Part 4</a>
               </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <a href="../resume/Resume_prai.pdf">
-              <button type="button" class="btn btn-primary" id="resumeId">
-                  <i class="fa fa-hand-peace-o" aria-hidden="true">
-                Download Resume</i></button></a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 2
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="ksu-milestone2.html">Book Search</a>
+              </li>
+              <li>
+                <a href="ksu-milestone-part2.html">Milestone 2 Part 1</a>
+              </li>
+
             </ul>
-          </div>
-        </nav>
+          </li>
+          <li>
+            <a href="milestone3part2.html">Milestone 3</a>
+          </li>
+          <li>
+            <a href="ksu-milestone3.html">Milestone 4</a>
+          </li>
+          <li>
+            <a href="termproject.html">Term Project</a>
+          </li>
+          <li>
+            <a href="others.html">Other Project</a>
+          </li>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <a href="../resume/Resume_prai.pdf">
+            <button type="button" class="btn btn-primary" id="resumeId">
+              <i class="fa fa-hand-peace-o" aria-hidden="true">
+                Download Resume</i>
+            </button>
+          </a>
+        </ul>
       </div>
-            
-<div id = "header">
+    </nav>
+  </div>
+  <div class="container" id="wrapper">
+    <div id="header">
+      <h1 class="ht">BookShelf</h1>
+    </div>
+    <div id="results" style="display: flex; flex-wrap: wrap;"></div>
+    <p class="par ">
+      <a class="par" href="Milestone2.html"> Home </a>
+    </p>
+  </div>
 
-                  <h1 class="ht">BookShelf</h1>
-
-                
-
-    
-
-     </div>
-
-
-<div id="results" style="display: flex; flex-wrap: wrap;"></div>
-
-
- <p class="par ">
-  <a class="par" href="Milestone2.html"> Home </a> </p>
-
-
+  <script>
+    $(function () {
+      var service_point1 = "https://www.googleapis.com/books/v1/users/102270121096513839701/bookshelves/1001/";
+      var service_point2 = "https://www.googleapis.com/books/v1/users/102270121096513839701/bookshelves/1001/volumes";
+      $.getJSON(service_point2, function (json2) {
+        //$("#shelf").text(json.title); 
+        resultHTML = "";
+        for (i in json2.items) {
+          var booktitle = json2.items[i].volumeInfo.title;
+          var bookid = json2.items[i].id;
+          var cover = json2.items[i].volumeInfo.imageLinks.smallThumbnail;
+          var url = json2.items[i].volumeInfo.infoLink;
+          resultHTML += "<div class='bookdiv'>";
+          resultHTML += "<img src='" + cover + "' style='float: left' />";
+          resultHTML += "<a href=" + url + "'>" + booktitle + "</a>";
+          resultHTML += "</div>";
+        }
+        $("#results").html(resultHTML);
+        $(".bookdiv").css("width", "300px");
+      });
+    });
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 </body>
-
 </html>

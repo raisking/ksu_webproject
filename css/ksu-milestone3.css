@@ -26,6 +26,7 @@
 		display: flex; 
 		flex-wrap: wrap;
 		width: 37vw;
+		
 	}
 		
 	.boxitem
@@ -95,6 +96,7 @@
 		position:fixed; top: 0px; left: 0px;
         width: 35%;
 		padding: 10px;
+		left: 10px;
     }
 	.header h1{
 		
@@ -109,7 +111,7 @@
         flex-direction: column;
         justify-content: space-between;
 		position: fixed;
-		top: 15px;
+		top: 100px;
 		right: 0px;
 		overflow:auto;
         width: 60%;;

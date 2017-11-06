@@ -14,10 +14,10 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/app.css">
-  
-  
-  
-  
+
+
+
+
 	<link href="css/ksu-milestone2.css" rel="stylesheet">
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -25,65 +25,93 @@
 </head>
 
 <body>
-		<div classs="container-fluid">
-				<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<a class="navbar-brand" href="http://www.kennesaw.edu" target="_blank">
-								<p id="ksu">Kennesaw State University</<p></p></a>
-						</div>
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 1 <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="milestone1.html">Milestone1 Part 1</a></li>
-									<li><a href="milestone2.html">Milestone1 Part 2</a></li>
-									<li><a href="milestone3.html">Milestone1 Part 3</a></li>
-									<li><a href="milestone4.html">Milestone1 Part 4</a></li>
-								</ul>
+	<div classs="container-fluid">
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="http://www.kennesaw.edu" target="_blank">
+						<p id="ksu">Kennesaw State University</<p></p>
+					</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 1
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="milestone1.html">Milestone1 Part 1</a>
 							</li>
-							 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 2 <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-										<li><a href="ksu-milestone2.html">Book Search</a></li>
-									<li><a href="ksu-milestone-part2.html">Milestone 2 Part 1</a></li>
-							 
-								</ul>
+							<li>
+								<a href="milestone2.html">Milestone1 Part 2</a>
 							</li>
-							<li><a href="milestone3part2.html">Milestone 3</a></li>
-							<li><a href="ksu-milestone3.html">Milestone 4</a></li>
-							<li><a href="termproject.html">Term Project</a></li>
-							<li><a href="others.html">Other Project</a></li>
+							<li>
+								<a href="milestone3.html">Milestone1 Part 3</a>
+							</li>
+							<li>
+								<a href="milestone4.html">Milestone1 Part 4</a>
 							</li>
 						</ul>
-						<ul class="nav navbar-nav navbar-right">
-								<a href="../resume/Resume_prai.pdf">
-							<button type="button" class="btn btn-primary" id="resumeId">
-									<i class="fa fa-hand-peace-o" aria-hidden="true">
-								Download Resume</i></button></a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Milestone 2
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="ksu-milestone2.html">Book Search</a>
+							</li>
+							<li>
+								<a href="ksu-milestone-part2.html">Milestone 2 Part 1</a>
+							</li>
+
 						</ul>
-					</div>
-				</nav>
+					</li>
+					<li>
+						<a href="milestone3part2.html">Milestone 3</a>
+					</li>
+					<li>
+						<a href="ksu-milestone3.html">Milestone 4</a>
+					</li>
+					<li>
+						<a href="termproject.html">Term Project</a>
+					</li>
+					<li>
+						<a href="others.html">Other Project</a>
+					</li>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<a href="../resume/Resume_prai.pdf">
+						<button type="button" class="btn btn-primary" id="resumeId">
+							<i class="fa fa-hand-peace-o" aria-hidden="true">
+								Download Resume</i>
+						</button>
+					</a>
+				</ul>
 			</div>
-	<div id="header">
-		<h1 class="ht">Google Books Search Engine</h1>
-
+		</nav>
+	</div>
+	<div class="contaioner">
+		<div id="header">
+			<h1 class="ht">Google Books Search Engine</h1>
+		</div>
+		<form action="https://www.googleapis.com/books/v1/volumes?q=" method="get">
+		</form>
+		<input id="search">
+		<button>Search</button>
+		<h1 id="title"></h1>
+		<h2>Total results:
+			<span id="total"></span>
+		</h2>
+		<div id="results" style="display: flex; flex-wrap: wrap;"></div>
+	</div>
 
 	</div>
 
-
-	<form action="https://www.googleapis.com/books/v1/volumes?q=" method="get">
-
-	</form>
-	<input id="search">
-	<button>Search</button>
-
-	<h1 id="title"></h1>
-	<h2>Total results:
-		<span id="total"></span>
-	</h2>
-
-	<div id="results" style="display: flex; flex-wrap: wrap;"></div>
-	</div>
 
 	<script>
 		$(document).ready(function () {
