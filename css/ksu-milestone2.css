@@ -23,9 +23,11 @@
   }
   
   #results{
-      display: flex;  
+      display: flex; 
+      justify-content: space-between; 
       flex-direction: row;  
       flex-flow: wrap;
+
   }
   #title{
       color: red;
