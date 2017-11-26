@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
   <title>Movie Database</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,9 +11,7 @@
   <link rel="stylesheet" type="text/css" href="css/movieSearch.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-
 <body>
-
   <div classs="container-fluid">
     <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
       <div class="container-fluid">
@@ -78,7 +74,6 @@
       </div>
     </nav>
   </div>
-
   <div class="container-fluid  div-header">
     <!--Main menu with search bar  -->
     <div class="row flexbox-container">
@@ -110,15 +105,11 @@
           <button type="button" class="btn btn-primary" id="Page3Results" onclick="Page3()">3</button>
           <!-- <button type="button" class="btn btn-primary" id="searchButton" onclick="Page3()">Search</button> -->
         </div>
-
       </div>
       <div class="col-md-4 header-img">
         <img id="header-img" class="img-responsive" src="images/movielogo.jpg" alt="Smiley face" style="float:left;width:150px;height:150px;">
       </div>
-
     </div>
-
-
   </div>
   </div>
   <a name="topOfPage" style="text-decoration:none;color: inherit" />
@@ -163,7 +154,6 @@
         };
         request.send();
       }
-
       movieSearchBox.addEventListener('keyup', function (event) {
         if (event.key === 'Enter') searchForMovies();
       });
@@ -214,10 +204,8 @@
         let colorClass = (resultsIndex % 2 === 0) ? 'bc-light-gray' : 'bc-light-gray2';
         resultsContainer.innerHTML += `<div id="movieResult${resultsIndex}" class='${resultsBoxName} ${colorClass}' onclick='requestMovieData(${id})'>${title} ${releaseDate}</div>`;
         //resultsContainer.appendChild(resultDiv);
-
         resultsIndex++;
       }
-
       // View detailed data for a specified movie
       function requestMovieData(id) {
         let movieData;
@@ -226,17 +214,14 @@
         // AJAX request to retrieve movie data
         let request = new XMLHttpRequest();
         request.open('GET', url);
-
         request.onreadystatechange = function () {
           if (request.readyState === 4) {
             preFormatResults('movieData');
             displayMovieData(request);
           }
         };
-
         request.send();
       }
-
       //=======================================================================================
       // Display detailed data for a clicked on movie
       function displayMovieData(request) {
@@ -251,9 +236,7 @@
         let homepageURL = movieData.homepage || '';
         let directors = movieData.credits.crew.filter(person => person.job === 'Director');
         cast = movieData.credits.cast;
-
         resultsContainer.innerHTML = movieData.poster_path ? `<img src='${posterPath}'>` : '';
-
         resultsContainer.innerHTML += `<h1>${title}</h1>`
           + `<span class='release-year'>${releaseYear}</span>`
           + `<div id='rating'>${rating}</div><br><br>`
@@ -262,7 +245,6 @@
           + `<span class='fw-bold'>Homepage:</span> `;
         resultsContainer.innerHTML += (homepageURL !== '') ? `<a href='${homepageURL}'>${homepageURL}</a>
   <br>` : 'No homepage available.<br>';
-
         appendDirectorInfo(directors);
         appendCastInfo('short');
       }
@@ -288,10 +270,10 @@
           let totalMembers = (cast.length < 10) ? cast.length : 10;
           for (let i = 0; i < totalMembers; i++) {
             castContainer.innerHTML +=
-              `<span class='pseudolink' onclick="requestCastInfo(${cast[i].id})"><a href="#toCastDetails" style="text-decoration:none;color: inherit">${cast[i].name}</a></span>:  ${cast[i].character}<br>`;
-
+            `<span class='pseudolink' onclick="requestCastInfo(${cast[i].id})">
+            <a href="#toCastDetails" style="text-decoration:none;color: inherit">${cast[i].name}</a></span>:  
+            ${cast[i].character}<br>`;
           }
-
           // Add button to show all cast members, if necessary
           if (cast.length > 10) {
             castContainer.innerHTML += `<br><button onclick="appendCastInfo('long')">More...</button><br>`;
@@ -301,28 +283,23 @@
         else if (length === 'long') {
           for (let i = 0; i < cast.length; i++) {
             castContainer.innerHTML +=
-              `<span class='pseudolink' onclick="requestCastInfo(${cast[i].id})"><a href="#toCastDetails" style="text-decoration:none;color: inherit">${cast[i].name}</a></span>:  ${cast[i].character}<br>`;
-
+              `<span class='pseudolink' onclick="requestCastInfo(${cast[i].id})">
+              <a href="#toCastDetails" style="text-decoration:none;color: inherit">
+              ${cast[i].name}</a></span>:  ${cast[i].character}<br>`;
           }
           castContainer.innerHTML += `<br><button onclick="appendCastInfo('short')">Less...</button><br>`;
           castContainer.innerHTML += `<button id="searchButton"onclick="searchForMovies();document.getElementById('btnHide').click()">Close</button>`;
-
-        }//
-
+        }
         // =============================================================
-
         resultsContainer.appendChild(castContainer);
       }
       function hideResults() {
         resultsContainer.style.display = 'none';
         movieSearchBox.value = '';
       }
-
-
       //VIEWS NUMBER OF SEARCH FROM HERE 
       //==================================================================
       function Page1() {
-
         // Page search 1 AJAX request
         queryValue = movieSearchBox.value;
         let encodedQueryValue = encodeURI(queryValue);
@@ -340,14 +317,11 @@
             // Gather up JSON search results
             searchResults = JSON.parse(request.responseText).results;
             resultsContainer.innerHTML = `<h3>${searchResults.length} found</h3><br/>`;
-
             // Dispaly search results
             searchResults.forEach(showQueryResult);
-
             console.log('/search/movie parsed response: ', JSON.parse(request.responseText));
           }
         };
-
         request.send();
       }
       //PAGE 2
@@ -391,7 +365,6 @@
         // AJAX request to search for movies by title
         let request = new XMLHttpRequest();
         request.open('GET', url);
-
         request.onreadystatechange = function () {
           if (request.readyState === 4) {
             // Format page
@@ -399,16 +372,13 @@
             // Gather up JSON search results
             searchResults = JSON.parse(request.responseText).results;
             resultsContainer.innerHTML = `<h3>${searchResults.length} found </h3><br/>`;
-
             // Dispaly search results
             searchResults.forEach(showQueryResult);
             console.log('/search/movie parsed response: ', JSON.parse(request.responseText));
           }
         };
-
         request.send();
       }
-
       function requestCastInfo(id) {
         $.getJSON("https://api.themoviedb.org/3/person/" + id + "?api_key=" + key + "&language=en-US", function (jsonData) {
           $("#profit").html("");
@@ -416,7 +386,6 @@
           var html = Mustache.render(template, jsonData);
           $("#profit").html(html);
           $("#profit").fadeIn();
-
           $("#btnHide").click(function () {
             $("#profit").fadeOut();
           });
@@ -426,7 +395,6 @@
       //MY POPULAR MOVIES
       function requestPopularMovies() {
         $.getJSON("https://api.themoviedb.org/3/discover/movie?api_key=" + key + "&sort_by = popularity.desc", function (jsonData) {
-
           $("#popularMoviesContainer").html("");
           var template = $('#popularMovies').html();
           var html = Mustache.render(template, jsonData);
@@ -459,10 +427,8 @@
       }
 
     </script>
-
     <!--Diplays popular movies-->
-  <script id="popularMovies" type="text/template">
-
+    <script id="popularMovies" type="text/template">
 	{{#results}}
 		<div id="Movie" onclick="requestMovieData({{id}});document.getElementById('data-container').style.display='block';document.getElementById('popularMoviesContainer').style.display='none'">
 		<img src='https://image.tmdb.org/t/p/w45{{poster_path}}'/>
@@ -470,8 +436,6 @@
 		</div>
 	{{/results}}
 </script>
-
-
   <script id="castDetailsTemplate" type="text/template">
 	<div class='castMember'>
 		<div><a href="#topOfPage" style="text-decoration:none;color: inherit">
@@ -479,8 +443,7 @@
 		<h2>{{name}}</h2>
 		<img src='https://image.tmdb.org/t/p/w185{{profile_path}}'/>
 		<h5><b>Date of Birth: {{birthday}}</b></h5>
-		<p>{{biography}}</p>
-		
+		<p>{{biography}}</p>		
 	</div>
 </script>
     <a name="toCastDetails" style="color: inherit" />
